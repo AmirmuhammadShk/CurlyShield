@@ -1,2 +1,2 @@
-# CIS-AutoDeploy
+# CurlyShield
 Automated CIS Benchmarks
