@@ -1,0 +1,1 @@
+sed -i '/^max_log_file_action/ s/ROTATE/keep_logs/' /etc/audit/auditd.conf

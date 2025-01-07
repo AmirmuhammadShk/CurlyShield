@@ -1,0 +1,1 @@
+yum -y update && yum install -y security updates

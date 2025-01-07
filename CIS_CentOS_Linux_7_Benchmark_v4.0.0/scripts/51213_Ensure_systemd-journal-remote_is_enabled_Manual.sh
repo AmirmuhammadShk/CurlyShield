@@ -1,0 +1,1 @@
+systemctl --now enable systemd-journal-upload.service

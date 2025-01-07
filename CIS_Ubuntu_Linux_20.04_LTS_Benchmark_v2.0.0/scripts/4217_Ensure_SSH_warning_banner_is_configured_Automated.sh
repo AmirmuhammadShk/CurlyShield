@@ -1,0 +1,2 @@
+echo "Banner /etc/issue.net" | sudo tee -a /etc/ssh/sshd_config
+Note: This script will create a new entry at the end of the file if one doesn't exist, and append to it if one does. The 'sudo' flag is used to ensure the command has elevated privileges to modify the file.

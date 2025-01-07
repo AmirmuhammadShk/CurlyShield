@@ -1,0 +1,1 @@
+find /path/to/directory -type d -o -type f | xargs chmod u+rx,g+r

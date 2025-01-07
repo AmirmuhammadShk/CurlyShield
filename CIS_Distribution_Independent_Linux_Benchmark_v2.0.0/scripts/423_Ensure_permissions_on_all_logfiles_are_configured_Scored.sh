@@ -1,0 +1,2 @@
+find /var/log -type f -exec chmod g-wx,o-rwx "{}" + -o -type d -exec chmod g-w,o-rwx "{}" +
+Note: The original script had incorrect usage of the find command, specifically with the '-exec' option and its arguments. This rewritten version should ensure that all log files in the /var/log directory have the correct permissions set.

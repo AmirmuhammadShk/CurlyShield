@@ -1,0 +1,2 @@
+echo "install usb-storage /bin/true" > /etc/modprobe.d/usb-storage.conf
+rmmod usb-storage

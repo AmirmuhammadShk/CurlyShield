@@ -1,0 +1,1 @@
+umask 0027 > /dev/null 2>&1

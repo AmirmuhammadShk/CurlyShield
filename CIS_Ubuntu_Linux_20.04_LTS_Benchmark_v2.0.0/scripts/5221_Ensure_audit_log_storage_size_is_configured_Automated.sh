@@ -1,0 +1,1 @@
+sudo sed -i 's/^\(max\_log\_file\).*$/max_log_file = 8000/g' /etc/audit/auditd.conf

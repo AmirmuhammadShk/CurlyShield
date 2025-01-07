@@ -1,0 +1,1 @@
+echo "DisableForwarding yes" | sudo tee -a /etc/ssh/sshd_config > /dev/null

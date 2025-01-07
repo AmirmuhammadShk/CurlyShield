@@ -1,0 +1,1 @@
+chkconfig --disable talk

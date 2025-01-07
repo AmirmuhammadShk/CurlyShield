@@ -1,0 +1,1 @@
+chmod o-w /path/to/filename  # Ensure no world writable files exist

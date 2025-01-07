@@ -1,0 +1,3 @@
+dnf remove cups
+Note: The original script only included one command, so it was rewritten as-is with a comment added for clarity.
+Please note that the original instructions mentioned "2.2.4 Ensure CUPS is not installed (Automated)" which seems to be a version number and doesn't make sense in this context. Also, I assume you meant to say "Remove" instead of "Ensure", as removing a package is typically done when it's no longer needed or causing issues.

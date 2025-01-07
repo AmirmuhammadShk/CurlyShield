@@ -1,0 +1,1 @@
+sed -i '/^:p:/d' /etc/passwd

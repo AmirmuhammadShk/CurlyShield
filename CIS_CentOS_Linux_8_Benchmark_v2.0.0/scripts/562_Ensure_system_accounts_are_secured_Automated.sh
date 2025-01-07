@@ -1,0 +1,4 @@
+awk -F: '($1!~/^(root|halt|sync|shutdown|nfsnobody)$/ && $3<$(getconf UID_MIN)) && $7!~/^(\/usr)?\/sbin\/nologin(\/)?$/ && $7!~/(\/usr)?\/bin\/false(\/)?$/) { print $1 }' /etc/passwd | while read user do usermod -s $(which nologin) $user done
+awk -F: '($1!="root" && $1!~/^\+/ && $3<$(getconf UID_MIN)) {print $1}' /etc/passwd | xargs -I '{}' passwd -S {} | awk '($2!="L" && $2!="LK") {print $1}' | while read user do usermod -L $user done
+awk -F: '($1!~/^(root|halt|sync|shutdown|nfsnobody)$/ && $3<$(getconf UID_MIN) && $7!~/^(\/usr)?\/sbin\/nologin(\/)?$/ && $7!~/(\/usr)?\/bin\/false(\/)?$/) { print $1 }' /etc/passwd | while read user do echo "$user $(which nologin)" | sudo usermod -s -1 $user done
+awk -F: '($1!="root" && $1!~/^\+/ && $3<$(getconf UID_MIN)) {print $1}' /etc/passwd | xargs -I '{}' passwd -S {} | awk '($2!="L" && $2!="LK") {print $1}' | while read user do echo "$user L" | sudo usermod -L $user done

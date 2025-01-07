@@ -1,0 +1,1 @@
+sudo apt purge ldap-utils

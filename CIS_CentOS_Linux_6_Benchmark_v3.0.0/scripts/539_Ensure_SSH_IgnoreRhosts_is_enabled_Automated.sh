@@ -1,0 +1,1 @@
+sed -i 's/^\(.*\).*/\1 yes/' /etc/ssh/sshd_config

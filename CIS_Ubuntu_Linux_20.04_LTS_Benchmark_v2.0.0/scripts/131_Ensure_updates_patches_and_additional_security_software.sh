@@ -1,0 +1,1 @@
+apt upgrade || apt dist-upgrade

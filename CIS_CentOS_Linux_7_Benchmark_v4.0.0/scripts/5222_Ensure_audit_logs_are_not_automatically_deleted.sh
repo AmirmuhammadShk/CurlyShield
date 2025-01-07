@@ -1,0 +1,1 @@
+echo "max_log_file_action=keep_logs" | sudo tee -a /etc/audit/auditd.conf > /dev/null

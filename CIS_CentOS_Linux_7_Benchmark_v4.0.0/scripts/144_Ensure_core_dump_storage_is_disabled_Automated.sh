@@ -1,0 +1,1 @@
+echo "Storage=none" | sudo tee /etc/systemd/coredump.conf > /dev/null

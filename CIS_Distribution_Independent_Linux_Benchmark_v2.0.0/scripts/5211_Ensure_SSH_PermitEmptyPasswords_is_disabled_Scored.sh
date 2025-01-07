@@ -1,0 +1,1 @@
+sed -i 's/PermitEmptyPasswords.*$/PermitEmptyPasswords no/' /etc/ssh/sshd_config

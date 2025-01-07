@@ -1,0 +1,2 @@
+echo "install freevxfs /bin/true" > /etc/modprobe.d/freevxfs.conf
+rmmod freevxfs

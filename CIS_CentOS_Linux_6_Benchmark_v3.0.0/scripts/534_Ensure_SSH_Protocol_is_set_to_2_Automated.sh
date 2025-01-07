@@ -1,0 +1,1 @@
+sudo sed -i 's/Protocol \([0-9]\+\).*/Protocol 2/' /etc/ssh/sshd_config

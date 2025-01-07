@@ -1,0 +1,1 @@
+echo "Authorized uses only. All activity may be monitored and reported." > /etc/issue

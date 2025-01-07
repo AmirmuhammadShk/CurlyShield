@@ -1,0 +1,1 @@
+dnf remove xorg-x11-server-common

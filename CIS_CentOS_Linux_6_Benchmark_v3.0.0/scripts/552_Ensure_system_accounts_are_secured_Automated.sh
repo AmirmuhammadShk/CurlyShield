@@ -1,0 +1,5 @@
+awk -F: '($1!="root" && $1!="/bin/false") {print $1}' /etc/passwd | while read -r user; do usermod -s "$(which nologin)" "$user"; done
+awk -F: '($1!="root" && $3>$(awk '/^\s*UID_MIN/{print $2}' /etc/login.defs)) {print $1}' /etc/passwd | xargs -I '{}' passwd -S '{}' | awk '($2!="/L") {print $1}' | while read -r user; do usermod -L "$user"; done
+for user in $(awk -F: '($1!="root" && $1!~/^\+/ && $3<"'$(awk '/^\s*UID_MIN/{print $2}' /etc/login.defs)"') {print $1}' /etc/passwd); do echo "$user" | sudo usermod -s /bin/false; done
+for user in $(awk '/^\s*UID_MIN/{print $2}' /etc/login.defs); do for u in $(getent passwd | awk '$1!="$user"' {print $1}); do echo "$u" | sudo usermod -s /bin/false; done; done
+for user in $(awk '/^\s*UID_MIN/{print $2}' /etc/login.defs); do for u in $(getent passwd | awk '$3!="/bin/false"' {print $1}); do echo "$u" | sudo userdel -f; done; done

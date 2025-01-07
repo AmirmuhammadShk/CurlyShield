@@ -1,0 +1,1 @@
+printf "install sctp /bin/false\n" > /etc/modprobe.d/sctp.conf

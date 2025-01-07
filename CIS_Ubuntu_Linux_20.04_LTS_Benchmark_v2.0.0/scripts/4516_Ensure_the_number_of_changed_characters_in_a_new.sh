@@ -1,0 +1,1 @@
+sed -i 's/difok=1/difok=2/g' /etc/security/pwquality.conf

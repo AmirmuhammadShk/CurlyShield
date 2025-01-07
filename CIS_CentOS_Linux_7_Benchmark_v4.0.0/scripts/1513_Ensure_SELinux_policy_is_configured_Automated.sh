@@ -1,0 +1,1 @@
+echo "SELINUXTYPE=targeted" > /etc/selinux/config

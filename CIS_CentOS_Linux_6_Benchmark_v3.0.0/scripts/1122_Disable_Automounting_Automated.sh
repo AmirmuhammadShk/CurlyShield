@@ -1,0 +1,1 @@
+sudo chkconfig autofs off

@@ -1,0 +1,1 @@
+sed -i '/NOPASSWD/d' /etc/sudoers > /tmp/tempsudoers && mv /tmp/tempsudoers /etc/sudoers

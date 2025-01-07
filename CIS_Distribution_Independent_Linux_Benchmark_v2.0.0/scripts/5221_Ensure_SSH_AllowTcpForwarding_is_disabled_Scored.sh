@@ -1,0 +1,1 @@
+sed -i 's/yes/no/' /etc/ssh/sshd_config

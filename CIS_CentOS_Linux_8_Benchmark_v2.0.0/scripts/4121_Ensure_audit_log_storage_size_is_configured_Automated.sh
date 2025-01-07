@@ -1,0 +1,1 @@
+echo "max_log_file = 1" > /etc/audit/auditd.conf

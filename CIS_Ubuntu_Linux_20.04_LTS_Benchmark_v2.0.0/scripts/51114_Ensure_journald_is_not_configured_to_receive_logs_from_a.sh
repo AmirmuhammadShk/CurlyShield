@@ -1,0 +1,1 @@
+systemctl --now disable systemd-journal-remote.socket

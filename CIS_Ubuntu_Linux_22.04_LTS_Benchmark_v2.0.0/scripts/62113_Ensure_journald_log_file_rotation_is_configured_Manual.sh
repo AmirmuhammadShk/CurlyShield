@@ -1,0 +1,8 @@
+echo "Edit /etc/systemd/journald.conf and update its contents according to your site policy."
+echo "Settings should be carefully understood as there are specific edge cases and prioritization of parameters."
+echo "Set the following parameters:"
+echo "SystemMaxUse="
+echo "SystemKeepFree="
+echo "RuntimeMaxUse="
+echo "RuntimeKeepFree="
+echo "MaxFileSec="

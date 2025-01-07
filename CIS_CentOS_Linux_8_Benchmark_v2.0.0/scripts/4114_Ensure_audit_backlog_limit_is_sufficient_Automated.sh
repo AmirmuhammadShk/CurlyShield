@@ -1,0 +1,1 @@
+grubby --update-kernel ALL --args 'audit_backlog_limit=<BACKLOG SIZE>'

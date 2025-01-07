@@ -1,0 +1,1 @@
+apt update && apt full-upgrade || { echo "Failed to update packages"; exit 1; }

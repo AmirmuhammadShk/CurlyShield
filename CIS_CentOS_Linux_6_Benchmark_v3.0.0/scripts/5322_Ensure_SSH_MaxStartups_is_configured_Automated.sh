@@ -1,0 +1,1 @@
+sed -i 's/maxstartups \(.*\)/maxstartups 10:30:60/' /etc/ssh/sshd_config

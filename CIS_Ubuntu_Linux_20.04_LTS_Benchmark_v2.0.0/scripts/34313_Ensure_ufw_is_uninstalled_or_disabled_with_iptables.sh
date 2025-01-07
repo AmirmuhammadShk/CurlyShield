@@ -1,0 +1,2 @@
+apt purge ufw || ufw disable && systemctl stop ufw && systemctl mask ufw
+Note: The '||' operator is used for the short-circuit behavior, ensuring that if `apt purge ufw` fails (for example, because it's already installed), `ufw disable` will not be executed.

@@ -1,0 +1,5 @@
+echo "Editing /etc/sudoers or /etc/sudoers.d/ with visudo or visudo -f <PATH TO FILE> and adding the following line:"
+Defaults logfile="/var/log/sudo.log"
+echo "Files are parsed in sorted lexical order, file names should start with a consistent number of leading zeroes to avoid issues."
+echo "/etc/sudoers.d/01_first will be parsed before /etc/sudoers.d/10_second"
+echo "Page 558"

@@ -1,0 +1,1 @@
+sed -i 's/([a-zA-Z])\1*[a-zA-Z]\1*/\1/g' /etc/security/pwquality.conf

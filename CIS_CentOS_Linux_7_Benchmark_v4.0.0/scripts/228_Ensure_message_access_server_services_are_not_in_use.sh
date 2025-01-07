@@ -1,0 +1,2 @@
+sudo yum remove -y dovecot cyrus-imapd || sudo yum update -y && sudo yum remove -y dovecot cyrus-imapd
+sudo systemctl stop --ignore-existing dovecot.socket dovecot.service cyrus-imapd.service && sudo systemctl mask --now dovecot.socket dovecot.service cyrus-imapd.service

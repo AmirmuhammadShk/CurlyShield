@@ -1,0 +1,6 @@
+echo "Recommend to set secure password policy"
+echo "Recommend to ensure all users have unique passwords"
+echo "Recommend to implement account lockout policy"
+echo "Recommend to regularly review and update group membership"
+echo "Recommend to ensure proper disposal of sensitive data"
+echo "Ensure root PATH integrity (Automated)"

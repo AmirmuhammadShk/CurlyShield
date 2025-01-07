@@ -1,0 +1,1 @@
+chkconfig rsync off

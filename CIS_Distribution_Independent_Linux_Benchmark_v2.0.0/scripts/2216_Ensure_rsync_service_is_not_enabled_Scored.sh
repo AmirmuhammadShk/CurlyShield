@@ -1,0 +1,1 @@
+chkconfig --set-default off || systemctl disable rsyncd || update-rc.d -f rsyncd disable

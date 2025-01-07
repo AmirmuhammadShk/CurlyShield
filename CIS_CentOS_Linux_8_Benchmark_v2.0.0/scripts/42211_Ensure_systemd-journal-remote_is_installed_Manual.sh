@@ -1,0 +1,1 @@
+dnf install systemd-journal-remote

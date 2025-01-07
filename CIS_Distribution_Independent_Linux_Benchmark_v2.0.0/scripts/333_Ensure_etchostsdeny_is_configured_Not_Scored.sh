@@ -1,0 +1,1 @@
+echo "ALL: ALL" >> /etc/hosts.deny

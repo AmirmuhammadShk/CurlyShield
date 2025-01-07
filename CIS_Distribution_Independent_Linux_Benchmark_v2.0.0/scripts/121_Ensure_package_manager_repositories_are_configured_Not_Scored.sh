@@ -1,0 +1,1 @@
+apt update -y; apt add-apt-repositories -y "$@"; apt update -y;

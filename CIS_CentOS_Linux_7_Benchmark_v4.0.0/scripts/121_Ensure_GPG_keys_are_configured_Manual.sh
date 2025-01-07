@@ -1,0 +1,2 @@
+sudo apt update --fix-missing && sudo apt keyring-create && sudo apt-key adv --keyserver hkp://pool.sks-keyservers.net --recv-keys <KEY_ID>  # Replace with the actual KEY_ID from your site policy
+sudo gpg --import /etc/apt/keyrings/*

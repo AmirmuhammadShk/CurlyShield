@@ -1,0 +1,2 @@
+sed -i '/KexAlgorithms/s/.*/KexAlgorithms=curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256/' /etc/ssh/sshd_config
+sudo systemctl restart ssh

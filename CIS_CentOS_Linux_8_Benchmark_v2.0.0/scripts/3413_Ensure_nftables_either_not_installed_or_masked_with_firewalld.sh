@@ -1,0 +1,1 @@
+dnf remove nftables || systemctl --now mask nftables

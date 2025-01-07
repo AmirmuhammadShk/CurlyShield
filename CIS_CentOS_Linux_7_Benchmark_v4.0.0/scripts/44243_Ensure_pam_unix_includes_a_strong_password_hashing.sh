@@ -1,0 +1,2 @@
+sed -i '/^auth\ s/pam_unix.so/pam_unix.so try_first_pass sha512/' /etc/pam.d/system-auth
+sed -i '/^password\ s/pam_unix\.so/pam_unix\.so sha512 shadow try_first_pass use_authtok/' /etc/pam.d/password-auth

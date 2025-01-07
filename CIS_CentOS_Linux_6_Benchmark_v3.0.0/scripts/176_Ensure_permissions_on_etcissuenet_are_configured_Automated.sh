@@ -1,0 +1,1 @@
+chown root:root /etc/issue.net; chmod u+x,go-rwx /etc/issue.net

@@ -1,0 +1,3 @@
+getent group | grep shadow | awk '{print $1}' | xargs userdel -r -f
+getent group | grep shadow | awk '{if ($3 == "shadow") {print $4}; else {exit 0;}}' | xargs chgroup -t -
+Note: This script assumes you are running it on a system where `userdel` and `chgroup` are available. Also, please be cautious when using this script as it permanently deletes users from the shadow group and changes their primary group without prompting for confirmation.

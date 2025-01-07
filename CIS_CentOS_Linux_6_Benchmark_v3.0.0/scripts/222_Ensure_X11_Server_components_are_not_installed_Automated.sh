@@ -1,0 +1,1 @@
+yum remove xorg-x11-server*

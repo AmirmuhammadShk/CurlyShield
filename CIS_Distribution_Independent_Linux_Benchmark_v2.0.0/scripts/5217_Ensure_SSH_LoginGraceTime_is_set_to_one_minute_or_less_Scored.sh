@@ -1,0 +1,1 @@
+sed -i 's/^\(LoginGraceTime\).*/\1 60/' /etc/ssh/sshd_config

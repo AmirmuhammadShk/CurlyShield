@@ -1,0 +1,2 @@
+echo "[Service]" >> /etc/systemd/system/rescue.service.d/00-require-auth.conf
+echo "ExecStart=-/usr/lib/systemd/systemd-sulogin-shell rescue" >> /etc/systemd/system/rescue.service.d/00-require-auth.conf

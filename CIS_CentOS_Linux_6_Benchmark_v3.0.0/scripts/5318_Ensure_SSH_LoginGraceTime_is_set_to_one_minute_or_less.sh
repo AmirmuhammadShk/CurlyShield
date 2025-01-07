@@ -1,0 +1,1 @@
+echo "LoginGraceTime 60" >> /etc/ssh/sshd_config

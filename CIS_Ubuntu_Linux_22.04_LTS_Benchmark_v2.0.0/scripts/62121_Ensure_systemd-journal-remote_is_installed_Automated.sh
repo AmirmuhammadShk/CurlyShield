@@ -1,0 +1,1 @@
+apt install systemd-journal-remote

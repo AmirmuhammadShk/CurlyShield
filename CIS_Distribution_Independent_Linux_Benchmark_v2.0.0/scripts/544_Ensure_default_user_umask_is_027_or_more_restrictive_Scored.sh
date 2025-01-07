@@ -1,0 +1,1 @@
+umask 027; umask -d; umask -u

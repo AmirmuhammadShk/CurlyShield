@@ -1,0 +1,1 @@
+enforce /etc/apparmor.d/*

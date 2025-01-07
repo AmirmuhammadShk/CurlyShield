@@ -1,0 +1,2 @@
+chkconfig crond on
+Note: The original content seems to be incomplete. If you provide the full file content or instructions, I can help you rewrite it with best practices or convert them into executable bash commands accordingly.

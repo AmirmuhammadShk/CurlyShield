@@ -1,0 +1,1 @@
+find /etc/audit/ -type f \( -name '*.conf' -o -name '*.rules' \) ! -group root | xargs -I {} bash -c "chgrp root {}".

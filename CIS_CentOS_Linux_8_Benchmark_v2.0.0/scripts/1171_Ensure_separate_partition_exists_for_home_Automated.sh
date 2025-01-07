@@ -1,0 +1,6 @@
+sudo fdisk -c 'mbr /dev/sda' || echo "Failed to create separate partition"
+sudo mkfs.ext4 /dev/sda1 || echo "Failed to format /home partition"
+sudo mount /dev/sda1 /home || echo "Failed to mount /home partition"
+echo "/dev/sda1 /home ext4 defaults 0 2" | sudo tee -a /etc/fstab || echo "Failed to add /home entry to fstab"
+mkdir -p /home || echo "Failed to create /home directory"
+sudo chown -R user:user /home || echo "Failed to set ownership for /home"

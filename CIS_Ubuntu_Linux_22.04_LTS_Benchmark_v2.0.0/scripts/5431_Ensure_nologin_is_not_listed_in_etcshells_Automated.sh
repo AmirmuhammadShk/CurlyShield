@@ -1,0 +1,1 @@
+sed -i '/nologin/d' /etc/shells

@@ -1,0 +1,1 @@
+sed -i '/^HostBasedAuthentication/ s/^.*//; i Hostbasedauthentication no' /etc/ssh/sshd_config

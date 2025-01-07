@@ -1,0 +1,1 @@
+apt purge dovecot-imapd dovecot-pop3d

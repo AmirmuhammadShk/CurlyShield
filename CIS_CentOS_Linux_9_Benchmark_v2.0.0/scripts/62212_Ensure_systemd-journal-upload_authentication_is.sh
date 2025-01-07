@@ -1,0 +1,2 @@
+sed -i 's/\[Upload\]/\[Upload\]\nURL=192.168.50.42\nServerKeyFile=/etc/ssl/private/journal-upload.pem\nServerCertificateFile=/etc/ssl/certs/journal-upload.pem\nTrustedCertificateFile=/etc/ssl/ca/trusted.pem/g' /etc/systemd/journal-upload.conf
+systemctl restart systemd-journal-upload

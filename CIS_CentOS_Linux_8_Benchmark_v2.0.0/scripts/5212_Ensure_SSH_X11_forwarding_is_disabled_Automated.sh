@@ -1,0 +1,1 @@
+sed -i 's/X11Forwarding=.*//X11Forwarding=no' /etc/ssh/sshd_config

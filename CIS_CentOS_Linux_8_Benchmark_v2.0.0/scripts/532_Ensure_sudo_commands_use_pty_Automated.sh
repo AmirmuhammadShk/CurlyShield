@@ -1,0 +1,1 @@
+sudo visudo -c "Defaults use_pty"

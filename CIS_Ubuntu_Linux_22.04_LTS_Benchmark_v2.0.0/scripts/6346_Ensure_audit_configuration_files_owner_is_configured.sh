@@ -1,0 +1,2 @@
+find /etc/audit/ -type f \( -name "*.conf" -o -name "*.rules" \) ! -user root | xargs -I {} sudo chown root {}
+This script finds all audit configuration files (`*.conf` and `*.rules`) in the `/etc/audit/` directory that are not owned by the root user, and then changes their ownership to root. The `-o` option is used to exclude files with an owner, and `-xargs -I {}` is used to execute `sudo chown root` on each matching file.

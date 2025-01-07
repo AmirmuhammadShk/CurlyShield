@@ -1,0 +1,2 @@
+yum install libpwquality
+Please note that the script is now complete and includes a single command to install libpwquality using yum. If you have any specific requirements or modifications needed, please let me know!

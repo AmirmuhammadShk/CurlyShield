@@ -1,0 +1,2 @@
+find / -type f -user root -perm 0777 | grep -v "libsystemd*" | xargs -I {} echo "{}" > /etc/audit/audit.rules
+find / -type d -user root -perm 2777 | grep -v "/var/lib/dbus" | xargs -I {} echo "{}" >> /etc/audit/audit.rules

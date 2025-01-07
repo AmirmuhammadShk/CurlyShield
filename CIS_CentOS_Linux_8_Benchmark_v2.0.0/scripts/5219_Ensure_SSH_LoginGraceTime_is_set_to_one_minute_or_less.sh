@@ -1,0 +1,3 @@
+sed -i 's/^\(LoginGraceTime\)/\1 30/' /etc/ssh/sshd_config
+This script will edit the sshd_config file to set LoginGraceTime to 30 seconds, which is less than one minute as recommended.
+Please note that this script uses the `sed` command for simplicity and readability. It's generally a good practice to use more robust editing methods when working with system configuration files, such as using `awk` or `sed -i 's/pattern/replacement/g' file`.

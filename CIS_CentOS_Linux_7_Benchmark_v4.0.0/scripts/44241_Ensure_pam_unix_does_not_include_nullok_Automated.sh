@@ -1,0 +1,2 @@
+sed -i '/^auth\s+.*\s*pam_unix.so/s/try_first_pass/nullok try_first_pass/' /etc/pam.d/system-auth
+sed -i '/^password\s+.*\s*pam_unix.so/s/try_first_pass/nullok try_first_pass/' /etc/pam.d/password-auth

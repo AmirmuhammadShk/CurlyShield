@@ -1,0 +1,1 @@
+sed -i '/^Enabled=/d' /etc/gdm3/custom.conf

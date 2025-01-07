@@ -1,0 +1,1 @@
+find /etc/audit/ -type f \( -name '*.conf' -o -name '*.rules' \) | xargs chmod u-x,g-wx,o-rwx

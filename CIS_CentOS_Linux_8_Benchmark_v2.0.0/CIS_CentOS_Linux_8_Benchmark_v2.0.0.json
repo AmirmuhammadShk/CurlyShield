@@ -1,0 +1,1362 @@
+[
+    {
+        "title": "1.1.1.1 Ensure mounting of cramfs filesystems is disabled (Automated)",
+        "description": "The cramfs filesystem type is a compressed read-only Linux filesystem embedded in small \nfootprint systems. A cramfs image can be used without having to first decompress the \nimage. \nRationale:",
+        "recommendations": "1111_Ensure_mounting_of_cramfs_filesystems_is_disabled_Automated.sh"
+    },
+    {
+        "title": "1.1.1.2 Ensure mounting of squashfs filesystems is disabled (Automated)",
+        "description": "The squashfs filesystem type is a compressed read-only Linux filesystem embedded in \nsmall footprint systems. A squashfs image can be used without having to first decompress \nthe image. \nRationale:",
+        "recommendations": "1112_Ensure_mounting_of_squashfs_filesystems_is_disabled_Automated.sh"
+    },
+    {
+        "title": "1.1.1.3 Ensure mounting of udf filesystems is disabled (Automated)",
+        "description": "The udf filesystem type is the universal disk format used to implement ISO/IEC 13346 and \nECMA-167 specifications. This is an open vendor filesystem type for data storage on a \nbroad range of media. This filesystem type is necessary to support writing DVDs and newer \noptical disc formats. \nRationale:",
+        "recommendations": "1113_Ensure_mounting_of_udf_filesystems_is_disabled_Automated.sh"
+    },
+    {
+        "title": "1.1.2.1 Ensure /tmp is a separate partition (Automated)",
+        "description": "The /tmp directory is a world-writable directory used for temporary storage by all users \nand some applications. \nRationale:",
+        "recommendations": "1121_Ensure_tmp_is_a_separate_partition_Automated.sh"
+    },
+    {
+        "title": "1.1.2.2 Ensure nodev option set on /tmp partition (Automated)",
+        "description": "The nodev mount option specifies that the filesystem cannot contain special devices. \nRationale:",
+        "recommendations": "1122_Ensure_nodev_option_set_on_tmp_partition_Automated.sh"
+    },
+    {
+        "title": "1.1.2.3 Ensure noexec option set on /tmp partition (Automated)",
+        "description": "The noexec mount option specifies that the filesystem cannot contain executable binaries. \nRationale:",
+        "recommendations": "1123_Ensure_noexec_option_set_on_tmp_partition_Automated.sh"
+    },
+    {
+        "title": "1.1.2.4 Ensure nosuid option set on /tmp partition (Automated)",
+        "description": "The nosuid mount option specifies that the filesystem cannot contain setuid files. \nRationale:",
+        "recommendations": "1124_Ensure_nosuid_option_set_on_tmp_partition_Automated.sh"
+    },
+    {
+        "title": "1.1.3.1 Ensure separate partition exists for /var (Automated)",
+        "description": "The /var directory is used by daemons and other system services to temporarily store \ndynamic data. Some directories created by these processes may be world-writable. \nRationale:",
+        "recommendations": "1131_Ensure_separate_partition_exists_for_var_Automated.sh"
+    },
+    {
+        "title": "1.1.3.2 Ensure nodev option set on /var partition (Automated)",
+        "description": "The nodev mount option specifies that the filesystem cannot contain special devices. \nRationale:",
+        "recommendations": "1132_Ensure_nodev_option_set_on_var_partition_Automated.sh"
+    },
+    {
+        "title": "1.1.3.3 Ensure noexec option set on /var partition (Automated)",
+        "description": "The noexec mount option specifies that the filesystem cannot contain executable binaries. \nRationale:",
+        "recommendations": "1133_Ensure_noexec_option_set_on_var_partition_Automated.sh"
+    },
+    {
+        "title": "1.1.3.4 Ensure nosuid option set on /var partition (Automated)",
+        "description": "The nosuid mount option specifies that the filesystem cannot contain setuid files. \nRationale:",
+        "recommendations": "1134_Ensure_nosuid_option_set_on_var_partition_Automated.sh"
+    },
+    {
+        "title": "1.1.4.1 Ensure separate partition exists for /var/tmp (Automated)",
+        "description": "The /var/tmp directory is a world-writable directory used for temporary storage by all \nusers and some applications. Temporary file residing in /var/tmp is to be preserved \nbetween reboots. \nRationale:",
+        "recommendations": "1141_Ensure_separate_partition_exists_for_vartmp_Automated.sh"
+    },
+    {
+        "title": "1.1.4.2 Ensure noexec option set on /var/tmp partition (Automated)",
+        "description": "The noexec mount option specifies that the filesystem cannot contain executable binaries. \nRationale:",
+        "recommendations": "1142_Ensure_noexec_option_set_on_vartmp_partition_Automated.sh"
+    },
+    {
+        "title": "1.1.4.3 Ensure nosuid option set on /var/tmp partition (Automated)",
+        "description": "The nosuid mount option specifies that the filesystem cannot contain setuid files. \nRationale:",
+        "recommendations": "1143_Ensure_nosuid_option_set_on_vartmp_partition_Automated.sh"
+    },
+    {
+        "title": "1.1.4.4 Ensure nodev option set on /var/tmp partition (Automated)",
+        "description": "The nodev mount option specifies that the filesystem cannot contain special devices. \nRationale:",
+        "recommendations": "1144_Ensure_nodev_option_set_on_vartmp_partition_Automated.sh"
+    },
+    {
+        "title": "1.1.5.1 Ensure separate partition exists for /var/log (Automated)",
+        "description": "The /var/log directory is used by system services to store log data. \nRationale:",
+        "recommendations": "1151_Ensure_separate_partition_exists_for_varlog_Automated.sh"
+    },
+    {
+        "title": "1.1.5.2 Ensure nodev option set on /var/log partition (Automated)",
+        "description": "The nodev mount option specifies that the filesystem cannot contain special devices. \nRationale:",
+        "recommendations": "1152_Ensure_nodev_option_set_on_varlog_partition_Automated.sh"
+    },
+    {
+        "title": "1.1.5.3 Ensure noexec option set on /var/log partition (Automated)",
+        "description": "The noexec mount option specifies that the filesystem cannot contain executable binaries. \nRationale:",
+        "recommendations": "1153_Ensure_noexec_option_set_on_varlog_partition_Automated.sh"
+    },
+    {
+        "title": "1.1.5.4 Ensure nosuid option set on /var/log partition (Automated)",
+        "description": "The nosuid mount option specifies that the filesystem cannot contain setuid files. \nRationale:",
+        "recommendations": "1154_Ensure_nosuid_option_set_on_varlog_partition_Automated.sh"
+    },
+    {
+        "title": "1.1.6.1 Ensure separate partition exists for /var/log/audit (Automated)",
+        "description": "The auditing daemon, auditd, stores log data in the /var/log/audit directory. \nRationale:",
+        "recommendations": "1161_Ensure_separate_partition_exists_for_varlogaudit_Automated.sh"
+    },
+    {
+        "title": "1.1.6.2 Ensure noexec option set on /var/log/audit partition",
+        "description": "The noexec mount option specifies that the filesystem cannot contain executable binaries. \nRationale:",
+        "recommendations": "1162_Ensure_noexec_option_set_on_varlogaudit_partition.sh"
+    },
+    {
+        "title": "1.1.6.3 Ensure nodev option set on /var/log/audit partition (Automated)",
+        "description": "The nodev mount option specifies that the filesystem cannot contain special devices. \nRationale:",
+        "recommendations": "1163_Ensure_nodev_option_set_on_varlogaudit_partition_Automated.sh"
+    },
+    {
+        "title": "1.1.6.4 Ensure nosuid option set on /var/log/audit partition",
+        "description": "The nosuid mount option specifies that the filesystem cannot contain setuid files. \nRationale:",
+        "recommendations": "1164_Ensure_nosuid_option_set_on_varlogaudit_partition.sh"
+    },
+    {
+        "title": "1.1.7.1 Ensure separate partition exists for /home (Automated)",
+        "description": "The /home directory is used to support disk storage needs of local users. \nRationale:",
+        "recommendations": "1171_Ensure_separate_partition_exists_for_home_Automated.sh"
+    },
+    {
+        "title": "1.1.7.2 Ensure nodev option set on /home partition (Automated)",
+        "description": "The nodev mount option specifies that the filesystem cannot contain special devices. \nRationale:",
+        "recommendations": "1172_Ensure_nodev_option_set_on_home_partition_Automated.sh"
+    },
+    {
+        "title": "1.1.7.3 Ensure nosuid option set on /home partition (Automated)",
+        "description": "The nosuid mount option specifies that the filesystem cannot contain setuid files. \nRationale:",
+        "recommendations": "1173_Ensure_nosuid_option_set_on_home_partition_Automated.sh"
+    },
+    {
+        "title": "1.1.7.4 Ensure usrquota option set on /home partition (Automated)",
+        "description": "The usrquota mount option allows for the filesystem to have disk quotas configured. \nRationale:",
+        "recommendations": "1174_Ensure_usrquota_option_set_on_home_partition_Automated.sh"
+    },
+    {
+        "title": "1.1.7.5 Ensure grpquota option set on /home partition (Automated)",
+        "description": "The grpquota mount option allows for the filesystem to have disk quotas configured. \nRationale:",
+        "recommendations": "1175_Ensure_grpquota_option_set_on_home_partition_Automated.sh"
+    },
+    {
+        "title": "1.1.8.1 Ensure nodev option set on /dev/shm partition (Automated)",
+        "description": "The nodev mount option specifies that the filesystem cannot contain special devices. \nRationale:",
+        "recommendations": "1181_Ensure_nodev_option_set_on_devshm_partition_Automated.sh"
+    },
+    {
+        "title": "1.1.8.2 Ensure noexec option set on /dev/shm partition (Automated)",
+        "description": "The noexec mount option specifies that the filesystem cannot contain executable binaries. \nRationale:",
+        "recommendations": "1182_Ensure_noexec_option_set_on_devshm_partition_Automated.sh"
+    },
+    {
+        "title": "1.1.8.3 Ensure nosuid option set on /dev/shm partition (Automated)",
+        "description": "The nosuid mount option specifies that the filesystem cannot contain setuid files. \nRationale:",
+        "recommendations": "1183_Ensure_nosuid_option_set_on_devshm_partition_Automated.sh"
+    },
+    {
+        "title": "1.1.9 Disable Automounting (Automated)",
+        "description": "autofs allows automatic mounting of devices, typically including CD/DVDs and USB drives. \nRationale:",
+        "recommendations": "119_Disable_Automounting_Automated.sh"
+    },
+    {
+        "title": "1.1.10 Disable USB Storage (Automated)",
+        "description": "USB storage provides a means to transfer and store files insuring persistence and \navailability of the files independent of network connection status. Its popularity and utility \nhas led to USB-based malware being a simple and common means for network infiltration \nand a first step to establishing a persistent threat within a networked environment. \nRationale:",
+        "recommendations": "1110_Disable_USB_Storage_Automated.sh"
+    },
+    {
+        "title": "1.2.1 Ensure GPG keys are configured (Manual)",
+        "description": "The RPM Package Manager implements GPG key signing to verify package integrity during \nand after installation. \nRationale:",
+        "recommendations": "121_Ensure_GPG_keys_are_configured_Manual.sh"
+    },
+    {
+        "title": "1.2.2 Ensure gpgcheck is globally activated (Automated)",
+        "description": "The gpgcheck option, found in the main section of the /etc/dnf/dnf.conf and individual \n/etc/yum.repos.d/* files, determines if an RPM package's signature is checked prior to its \ninstallation. \nRationale:",
+        "recommendations": "122_Ensure_gpgcheck_is_globally_activated_Automated.sh"
+    },
+    {
+        "title": "1.2.3 Ensure package manager repositories are configured (Manual)",
+        "description": "Systems need to have the respective package manager repositories configured to ensure \nthat the system is able to receive the latest patches and updates. \nRationale:",
+        "recommendations": "123_Ensure_package_manager_repositories_are_configured_Manual.sh"
+    },
+    {
+        "title": "1.3.1 Ensure AIDE is installed (Automated)",
+        "description": "Advanced Intrusion Detection Environment (AIDE) is a intrusion detection tool that uses \npredefined rules to check the integrity of files and directories in the Linux operating \nsystem. AIDE has its own database to check the integrity of files and directories. \nAIDE takes a snapshot of files and directories including modification times, permissions, \nand file hashes which can then be used to compare against the current state of the \nfilesystem to detect modifications to the system. \nRationale:",
+        "recommendations": "131_Ensure_AIDE_is_installed_Automated.sh"
+    },
+    {
+        "title": "1.3.2 Ensure filesystem integrity is regularly checked (Automated)",
+        "description": "Periodic checking of the filesystem integrity is needed to detect changes to the filesystem. \nRationale:",
+        "recommendations": "132_Ensure_filesystem_integrity_is_regularly_checked_Automated.sh"
+    },
+    {
+        "title": "1.4.1 Ensure bootloader password is set (Automated)",
+        "description": "Setting the boot loader password will require that anyone rebooting the system must enter \na password before being able to set command line boot parameters. \nRationale:",
+        "recommendations": "141_Ensure_bootloader_password_is_set_Automated.sh"
+    },
+    {
+        "title": "1.4.2 Ensure permissions on bootloader config are configured",
+        "description": "The grub files contain information on boot settings and passwords for unlocking boot \noptions. \nThe grub2 configuration is usually grub.cfg. On newer grub2 systems the encrypted \nbootloader password is contained in user.cfg. \nIf the system uses UEFI, /boot/efi is a vfat filesystem. The vfat filesystem itself doesn't \nhave the concept of permissions but can be mounted under Linux with whatever \npermissions desired. \nRationale:",
+        "recommendations": "142_Ensure_permissions_on_bootloader_config_are_configured.sh"
+    },
+    {
+        "title": "1.4.3 Ensure authentication is required when booting into rescue mode",
+        "description": "Rescue mode (former single user mode) is used for recovery when the system detects an \nissue during boot or by manual selection from the bootloader. \nRationale:",
+        "recommendations": "143_Ensure_authentication_is_required_when_booting_into_rescue_mode.sh"
+    },
+    {
+        "title": "1.5.1 Ensure core dump storage is disabled (Automated)",
+        "description": "A core dump is the memory of an executable program. It is generally used to determine \nwhy a program aborted. It can also be used to glean confidential information from a core \nfile. \nRationale:",
+        "recommendations": "151_Ensure_core_dump_storage_is_disabled_Automated.sh"
+    },
+    {
+        "title": "1.5.2 Ensure core dump backtraces are disabled (Automated)",
+        "description": "A core dump is the memory of an executable program. It is generally used to determine \nwhy a program aborted. It can also be used to glean confidential information from a core \nfile. \nRationale:",
+        "recommendations": "152_Ensure_core_dump_backtraces_are_disabled_Automated.sh"
+    },
+    {
+        "title": "1.5.3 Ensure address space layout randomization (ASLR) is enabled",
+        "description": "Address space layout randomization (ASLR) is an exploit mitigation technique which \nrandomly arranges the address space of key data areas of a process. \nRationale:",
+        "recommendations": "153_Ensure_address_space_layout_randomization_ASLR_is_enabled.sh"
+    },
+    {
+        "title": "1.6.1 Configure SELinux",
+        "description": "",
+        "recommendations": "161_Configure_SELinux.sh"
+    },
+    {
+        "title": "1.6.1.1 Ensure SELinux is installed (Automated)",
+        "description": "SELinux provides Mandatory Access Control. \nRationale:",
+        "recommendations": "1611_Ensure_SELinux_is_installed_Automated.sh"
+    },
+    {
+        "title": "1.6.1.2 Ensure SELinux is not disabled in bootloader configuration",
+        "description": "Configure SELINUX to be enabled at boot time and verify that it has not been overwritten \nby the grub boot parameters. \nRationale:",
+        "recommendations": "1612_Ensure_SELinux_is_not_disabled_in_bootloader_configuration.sh"
+    },
+    {
+        "title": "1.6.1.3 Ensure SELinux policy is configured (Automated)",
+        "description": "Configure SELinux to meet or exceed the default targeted policy, which constrains daemons \nand system software only. \nRationale:",
+        "recommendations": "1613_Ensure_SELinux_policy_is_configured_Automated.sh"
+    },
+    {
+        "title": "1.6.1.4 Ensure the SELinux mode is not disabled (Automated)",
+        "description": "SELinux can run in one of three modes: disabled, permissive, or enforcing: \n\uf0b7 Enforcing - Is the default, and recommended, mode of operation; in enforcing mode \nSELinux operates normally, enforcing the loaded security policy on the entire \nsystem. \n\uf0b7 Permissive - The system acts as if SELinux is enforcing the loaded security policy, \nincluding labeling objects and emitting access denial entries in the logs, but it does \nnot actually deny any operations. While not recommended for production systems, \npermissive mode can be helpful for SELinux policy development. \n\uf0b7 Disabled - Is strongly discouraged; not only does the system avoid enforcing the \nSELinux policy, it also avoids labeling any persistent objects such as files, making it \ndifficult to enable SELinux in the future \nNote: you can set individual domains to permissive mode while the system runs in \nenforcing mode. For example, to make the httpd_t domain permissive: \n# semanage permissive -a httpd_t \nRationale:",
+        "recommendations": "1614_Ensure_the_SELinux_mode_is_not_disabled_Automated.sh"
+    },
+    {
+        "title": "1.6.1.5 Ensure the SELinux mode is enforcing (Automated)",
+        "description": "SELinux can run in one of three modes: disabled, permissive, or enforcing: \n\uf0b7 Enforcing - Is the default, and recommended, mode of operation; in enforcing mode \nSELinux operates normally, enforcing the loaded security policy on the entire \nsystem. \n\uf0b7 Permissive - The system acts as if SELinux is enforcing the loaded security policy, \nincluding labeling objects and emitting access denial entries in the logs, but it does \nnot actually deny any operations. While not recommended for production systems, \npermissive mode can be helpful for SELinux policy development. \n\uf0b7 Disabled - Is strongly discouraged; not only does the system avoid enforcing the \nSELinux policy, it also avoids labeling any persistent objects such as files, making it \ndifficult to enable SELinux in the future \nNote: you can set individual domains to permissive mode while the system runs in enforcing \nmode. For example, to make the httpd_t domain permissive: \n# semanage permissive -a httpd_t \nRationale:",
+        "recommendations": "1615_Ensure_the_SELinux_mode_is_enforcing_Automated.sh"
+    },
+    {
+        "title": "1.6.1.6 Ensure no unconfined services exist (Automated)",
+        "description": "Unconfined processes run in unconfined domains \nRationale:",
+        "recommendations": "1616_Ensure_no_unconfined_services_exist_Automated.sh"
+    },
+    {
+        "title": "1.6.1.7 Ensure SETroubleshoot is not installed (Automated)",
+        "description": "The SETroubleshoot service notifies desktop users of SELinux denials through a user-\nfriendly interface. The service provides important information around configuration errors, \nunauthorized intrusions, and other potential errors. \nRationale:",
+        "recommendations": "1617_Ensure_SETroubleshoot_is_not_installed_Automated.sh"
+    },
+    {
+        "title": "1.6.1.8 Ensure the MCS Translation Service (mcstrans) is not installed",
+        "description": "The mcstransd daemon provides category label information to client processes requesting \ninformation. The label translations are defined in /etc/selinux/targeted/setrans.conf \nRationale:",
+        "recommendations": "1618_Ensure_the_MCS_Translation_Service_mcstrans_is_not_installed.sh"
+    },
+    {
+        "title": "1.7.1 Ensure message of the day is configured properly (Automated)",
+        "description": "The contents of the /etc/motd file are displayed to users after login and function as a \nmessage of the day for authenticated users. \nUnix-based systems have typically displayed information about the OS release and patch \nlevel upon logging in to the system. This information can be useful to developers who are \ndeveloping software for a particular OS platform. If mingetty(8) supports the following \noptions, they display operating system information: \\m - machine architecture \\r - \noperating system release \\s - operating system name \\v - operating system version \nRationale:",
+        "recommendations": "171_Ensure_message_of_the_day_is_configured_properly_Automated.sh"
+    },
+    {
+        "title": "1.7.2 Ensure local login warning banner is configured properly",
+        "description": "The contents of the /etc/issue file are displayed to users prior to login for local terminals. \nUnix-based systems have typically displayed information about the OS release and patch \nlevel upon logging in to the system. This information can be useful to developers who are \ndeveloping software for a particular OS platform. If mingetty(8) supports the following \noptions, they display operating system information: \\m - machine architecture \\r - \noperating system release \\s - operating system name \\v - operating system version - or the \noperating system's name \nRationale:",
+        "recommendations": "172_Ensure_local_login_warning_banner_is_configured_properly.sh"
+    },
+    {
+        "title": "1.7.3 Ensure remote login warning banner is configured properly",
+        "description": "The contents of the /etc/issue.net file are displayed to users prior to login for remote \nconnections from configured services. \nUnix-based systems have typically displayed information about the OS release and patch \nlevel upon logging in to the system. This information can be useful to developers who are \ndeveloping software for a particular OS platform. If mingetty(8) supports the following \noptions, they display operating system information: \\m - machine architecture \\r - \noperating system release \\s - operating system name \\v - operating system version \nRationale:",
+        "recommendations": "173_Ensure_remote_login_warning_banner_is_configured_properly.sh"
+    },
+    {
+        "title": "1.7.4 Ensure permissions on /etc/motd are configured (Automated)",
+        "description": "The contents of the /etc/motd file are displayed to users after login and function as a \nmessage of the day for authenticated users. \nRationale:",
+        "recommendations": "174_Ensure_permissions_on_etcmotd_are_configured_Automated.sh"
+    },
+    {
+        "title": "1.7.5 Ensure permissions on /etc/issue are configured (Automated)",
+        "description": "The contents of the /etc/issue file are displayed to users prior to login for local terminals. \nRationale:",
+        "recommendations": "175_Ensure_permissions_on_etcissue_are_configured_Automated.sh"
+    },
+    {
+        "title": "1.7.6 Ensure permissions on /etc/issue.net are configured (Automated)",
+        "description": "The contents of the /etc/issue.net file are displayed to users prior to login for remote \nconnections from configured services. \nRationale:",
+        "recommendations": "176_Ensure_permissions_on_etcissuenet_are_configured_Automated.sh"
+    },
+    {
+        "title": "1.8.1 Ensure GNOME Display Manager is removed (Manual)",
+        "description": "The GNOME Display Manager (GDM) is a program that manages graphical display servers \nand handles graphical user logins. \nRationale:",
+        "recommendations": "181_Ensure_GNOME_Display_Manager_is_removed_Manual.sh"
+    },
+    {
+        "title": "1.8.2 Ensure GDM login banner is configured (Automated)",
+        "description": "GDM is the GNOME Display Manager which handles graphical login for GNOME based \nsystems. \nRationale:",
+        "recommendations": "182_Ensure_GDM_login_banner_is_configured_Automated.sh"
+    },
+    {
+        "title": "1.8.3 Ensure last logged in user display is disabled (Automated)",
+        "description": "GDM is the GNOME Display Manager which handles graphical login for GNOME based \nsystems. \nRationale:",
+        "recommendations": "183_Ensure_last_logged_in_user_display_is_disabled_Automated.sh"
+    },
+    {
+        "title": "1.8.4 Ensure XDMCP is not enabled (Automated)",
+        "description": "X Display Manager Control Protocol (XDMCP) is designed to provide authenticated access \nto display management services for remote displays \nRationale:",
+        "recommendations": "184_Ensure_XDMCP_is_not_enabled_Automated.sh"
+    },
+    {
+        "title": "1.8.5 Ensure automatic mounting of removable media is disabled",
+        "description": "By default GNOME automatically mounts removable media when inserted as a convenience \nto the user. \nRationale:",
+        "recommendations": "185_Ensure_automatic_mounting_of_removable_media_is_disabled.sh"
+    },
+    {
+        "title": "1.9 Ensure updates, patches, and additional security software are",
+        "description": "Periodically patches are released for included software either due to security flaws or to \ninclude additional functionality. \nRationale:",
+        "recommendations": "19_Ensure_updates_patches_and_additional_security_software_are.sh"
+    },
+    {
+        "title": "1.10 Ensure system-wide crypto policy is not legacy (Automated)",
+        "description": "The system-wide crypto-policies followed by the crypto core components allow \nconsistently deprecating and disabling algorithms system-wide. \nThe individual policy levels (DEFAULT, LEGACY, FUTURE, and FIPS) are included in the \ncrypto-policies(7) package. \nRationale:",
+        "recommendations": "110_Ensure_system-wide_crypto_policy_is_not_legacy_Automated.sh"
+    },
+    {
+        "title": "2.1.1 Ensure time synchronization is in use (Automated)",
+        "description": "System time should be synchronized between all systems in an environment. This is \ntypically done by establishing an authoritative time server or set of servers and having all \nsystems synchronize their clocks to them. \nNote: If another method for time synchronization is being used, this section may be \nskipped. \nRationale:",
+        "recommendations": "211_Ensure_time_synchronization_is_in_use_Automated.sh"
+    },
+    {
+        "title": "2.1.2 Ensure chrony is configured (Automated)",
+        "description": "chrony is a daemon which implements the Network Time Protocol (NTP) and is designed to \nsynchronize system clocks across a variety of systems and use a source that is highly \naccurate. More information on chrony can be found at http://chrony.tuxfamily.org/. chrony \ncan be configured to be a client and/or a server. \nRationale:",
+        "recommendations": "212_Ensure_chrony_is_configured_Automated.sh"
+    },
+    {
+        "title": "2.2.1 Ensure xinetd is not installed (Automated)",
+        "description": "The eXtended InterNET Daemon ( xinetd ) is an open source super daemon that replaced \nthe original inetd daemon. The xinetd daemon listens for well known services and \ndispatches the appropriate daemon to properly respond to service requests. \nRationale:",
+        "recommendations": "221_Ensure_xinetd_is_not_installed_Automated.sh"
+    },
+    {
+        "title": "2.2.2 Ensure xorg-x11-server-common is not installed (Automated)",
+        "description": "The X Window System provides a Graphical User Interface (GUI) where users can have \nmultiple windows in which to run programs and various add on. The X Windows system is \ntypically used on workstations where users login, but not on servers where users typically \ndo not login. \nRationale:",
+        "recommendations": "222_Ensure_xorg-x11-server-common_is_not_installed_Automated.sh"
+    },
+    {
+        "title": "2.2.3 Ensure Avahi Server is not installed (Automated)",
+        "description": "Avahi is a free zeroconf implementation, including a system for multicast DNS/DNS-SD \nservice discovery. Avahi allows programs to publish and discover services and hosts \nrunning on a local network with no specific configuration. For example, a user can plug a \ncomputer into a network and Avahi automatically finds printers to print to, files to look at \nand people to talk to, as well as network services running on the machine. \nRationale:",
+        "recommendations": "223_Ensure_Avahi_Server_is_not_installed_Automated.sh"
+    },
+    {
+        "title": "2.2.4 Ensure CUPS is not installed (Automated)",
+        "description": "The Common Unix Print System (CUPS) provides the ability to print to both local and \nnetwork printers. A system running CUPS can also accept print jobs from remote systems \nand print them to local printers. It also provides a web based remote administration \ncapability. \nRationale:",
+        "recommendations": "224_Ensure_CUPS_is_not_installed_Automated.sh"
+    },
+    {
+        "title": "2.2.5 Ensure DHCP Server is not installed (Automated)",
+        "description": "The Dynamic Host Configuration Protocol (DHCP) is a service that allows machines to be \ndynamically assigned IP addresses. \nRationale:",
+        "recommendations": "225_Ensure_DHCP_Server_is_not_installed_Automated.sh"
+    },
+    {
+        "title": "2.2.6 Ensure DNS Server is not installed (Automated)",
+        "description": "The Domain Name System (DNS) is a hierarchical naming system that maps names to IP \naddresses for computers, services and other resources connected to a network. \nRationale:",
+        "recommendations": "226_Ensure_DNS_Server_is_not_installed_Automated.sh"
+    },
+    {
+        "title": "2.2.7 Ensure FTP Server is not installed (Automated)",
+        "description": "FTP (File Transfer Protocol) is a traditional and widely used standard tool for transferring \nfiles between a server and clients over a network, especially where no authentication is \nnecessary (permits anonymous users to connect to a server). \nRationale:",
+        "recommendations": "227_Ensure_FTP_Server_is_not_installed_Automated.sh"
+    },
+    {
+        "title": "2.2.8 Ensure VSFTP Server is not installed (Automated)",
+        "description": "FTP (File Transfer Protocol) is a traditional and widely used standard tool for transferring \nfiles between a server and clients over a network, especially where no authentication is \nnecessary (permits anonymous users to connect to a server). \nRationale:",
+        "recommendations": "228_Ensure_VSFTP_Server_is_not_installed_Automated.sh"
+    },
+    {
+        "title": "2.2.9 Ensure TFTP Server is not installed (Automated)",
+        "description": "Trivial File Transfer Protocol (TFTP) is a simple protocol for exchanging files between two \nTCP/IP machines. TFTP servers allow connections from a TFTP Client for sending and \nreceiving files. \nRationale:",
+        "recommendations": "229_Ensure_TFTP_Server_is_not_installed_Automated.sh"
+    },
+    {
+        "title": "2.2.10 Ensure a web server is not installed (Automated)",
+        "description": "Web servers provide the ability to host web site content. \nRationale:",
+        "recommendations": "2210_Ensure_a_web_server_is_not_installed_Automated.sh"
+    },
+    {
+        "title": "2.2.11 Ensure IMAP and POP3 server is not installed (Automated)",
+        "description": "dovecot is an open source IMAP and POP3 server for Linux based systems. \nRationale:",
+        "recommendations": "2211_Ensure_IMAP_and_POP3_server_is_not_installed_Automated.sh"
+    },
+    {
+        "title": "2.2.12 Ensure Samba is not installed (Automated)",
+        "description": "The Samba daemon allows system administrators to configure their Linux systems to share \nfile systems and directories with Windows desktops. Samba will advertise the file systems \nand directories via the Server Message Block (SMB) protocol. Windows desktop users will \nbe able to mount these directories and file systems as letter drives on their systems. \nRationale:",
+        "recommendations": "2212_Ensure_Samba_is_not_installed_Automated.sh"
+    },
+    {
+        "title": "2.2.13 Ensure HTTP Proxy Server is not installed (Automated)",
+        "description": "Squid is a standard proxy server used in many distributions and environments. \nRationale:",
+        "recommendations": "2213_Ensure_HTTP_Proxy_Server_is_not_installed_Automated.sh"
+    },
+    {
+        "title": "2.2.14 Ensure net-snmp is not installed (Automated)",
+        "description": "Simple Network Management Protocol (SNMP) is a widely used protocol for monitoring the \nhealth and welfare of network equipment, computer equipment and devices like UPSs. \nNet-SNMP is a suite of applications used to implement SNMPv1 (RFC 1157), SNMPv2 (RFCs \n1901-1908), and SNMPv3 (RFCs 3411-3418) using both IPv4 and IPv6. \nSupport for SNMPv2 classic (a.k.a. \"SNMPv2 historic\" - RFCs 1441-1452) was dropped with \nthe 4.0 release of the UCD-snmp package. \nThe Simple Network Management Protocol (SNMP) server is used to listen for SNMP \ncommands from an SNMP management system, execute the commands or collect the \ninformation and then send results back to the requesting system. \nRationale:",
+        "recommendations": "2214_Ensure_net-snmp_is_not_installed_Automated.sh"
+    },
+    {
+        "title": "2.2.15 Ensure NIS server is not installed (Automated)",
+        "description": "The ypserv package provides the Network Information Service (NIS). This service, formally \nknown as Yellow Pages, is a client-server directory service protocol for distributing system \nconfiguration files. The NIS server is a collection of programs that allow for the distribution \nof configuration files. \nRationale:",
+        "recommendations": "2215_Ensure_NIS_server_is_not_installed_Automated.sh"
+    },
+    {
+        "title": "2.2.16 Ensure telnet-server is not installed (Automated)",
+        "description": "The telnet-server package contains the telnet daemon, which accepts connections from \nusers from other systems via the telnet protocol. \nRationale:",
+        "recommendations": "2216_Ensure_telnet-server_is_not_installed_Automated.sh"
+    },
+    {
+        "title": "2.2.17 Ensure mail transfer agent is configured for local-only mode",
+        "description": "Mail Transfer Agents (MTA), such as sendmail and Postfix, are used to listen for incoming \nmail and transfer the messages to the appropriate user or mail server. If the system is not \nintended to be a mail server, it is recommended that the MTA be configured to only process \nlocal mail. \nRationale:",
+        "recommendations": "2217_Ensure_mail_transfer_agent_is_configured_for_local-only_mode.sh"
+    },
+    {
+        "title": "2.2.18 Ensure nfs-utils is not installed or the nfs-server service is masked",
+        "description": "The Network File System (NFS) is one of the first and most widely distributed file systems \nin the UNIX environment. It provides the ability for systems to mount file systems of other \nservers through the network. \nRationale:",
+        "recommendations": "2218_Ensure_nfs-utils_is_not_installed_or_the_nfs-server_service_is_masked.sh"
+    },
+    {
+        "title": "2.2.19 Ensure rpcbind is not installed or the rpcbind services are masked",
+        "description": "The rpcbind utility maps RPC services to the ports on which they listen. RPC processes \nnotify rpcbind when they start, registering the ports they are listening on and the RPC \nprogram numbers they expect to serve. The client system then contacts rpcbind on the \nserver with a particular RPC program number. The rpcbind service redirects the client to \nthe proper port number so it can communicate with the requested service \nPortmapper is an RPC service, which always listens on tcp and udp 111, and is used to map \nother RPC services (such as nfs, nlockmgr, quotad, mountd, etc.) to their corresponding \nport number on the server. When a remote host makes an RPC call to that server, it first \nconsults with portmap to determine where the RPC server is listening. \nRationale:",
+        "recommendations": "2219_Ensure_rpcbind_is_not_installed_or_the_rpcbind_services_are_masked.sh"
+    },
+    {
+        "title": "2.2.20 Ensure rsync is not installed or the rsyncd service is masked",
+        "description": "The rsyncd service can be used to synchronize files between systems over network links. \nRationale:",
+        "recommendations": "2220_Ensure_rsync_is_not_installed_or_the_rsyncd_service_is_masked.sh"
+    },
+    {
+        "title": "2.3.1 Ensure NIS Client is not installed (Automated)",
+        "description": "The Network Information Service (NIS), formerly known as Yellow Pages, is a client-server \ndirectory service protocol used to distribute system configuration files. The NIS client ( \nypbind ) was used to bind a machine to an NIS server and receive the distributed \nconfiguration files. \nRationale:",
+        "recommendations": "231_Ensure_NIS_Client_is_not_installed_Automated.sh"
+    },
+    {
+        "title": "2.3.2 Ensure rsh client is not installed (Automated)",
+        "description": "The rsh package contains the client commands for the rsh services. \nRationale:",
+        "recommendations": "232_Ensure_rsh_client_is_not_installed_Automated.sh"
+    },
+    {
+        "title": "2.3.3 Ensure talk client is not installed (Automated)",
+        "description": "The talk software makes it possible for users to send and receive messages across systems \nthrough a terminal session. The talk client, which allows initialization of talk sessions, is \ninstalled by default. \nRationale:",
+        "recommendations": "233_Ensure_talk_client_is_not_installed_Automated.sh"
+    },
+    {
+        "title": "2.3.4 Ensure telnet client is not installed (Automated)",
+        "description": "The telnet package contains the telnet client, which allows users to start connections to \nother systems via the telnet protocol. \nRationale:",
+        "recommendations": "234_Ensure_telnet_client_is_not_installed_Automated.sh"
+    },
+    {
+        "title": "2.3.5 Ensure LDAP client is not installed (Automated)",
+        "description": "The Lightweight Directory Access Protocol (LDAP) was introduced as a replacement for \nNIS/YP. It is a service that provides a method for looking up information from a central \ndatabase. \nRationale:",
+        "recommendations": "235_Ensure_LDAP_client_is_not_installed_Automated.sh"
+    },
+    {
+        "title": "2.3.6 Ensure TFTP client is not installed (Automated)",
+        "description": "Trivial File Transfer Protocol (TFTP) is a simple protocol for exchanging files between two \nTCP/IP machines. TFTP servers allow connections from a TFTP Client for sending and \nreceiving files. \nRationale:",
+        "recommendations": "236_Ensure_TFTP_client_is_not_installed_Automated.sh"
+    },
+    {
+        "title": "2.4 Ensure nonessential services are removed or masked (Manual)",
+        "description": "A network port is identified by its number, the associated IP address, and the type of the \ncommunication protocol such as TCP or UDP. \nA listening port is a network port on which an application or process listens on, acting as a \ncommunication endpoint. \nEach listening port can be open or closed (filtered) using a firewall. In general terms, an \nopen port is a network port that accepts incoming packets from remote locations. \nRationale:",
+        "recommendations": "24_Ensure_nonessential_services_are_removed_or_masked_Manual.sh"
+    },
+    {
+        "title": "3.1.1 Verify if IPv6 is enabled on the system (Manual)",
+        "description": "Internet Protocol Version 6 (IPv6) is the most recent version of Internet Protocol (IP). It's \ndesigned to supply IP addressing and additional security to support the predicted growth \nof connected devices. \nRationale:",
+        "recommendations": "311_Verify_if_IPv6_is_enabled_on_the_system_Manual.sh"
+    },
+    {
+        "title": "3.1.2 Ensure SCTP is disabled (Automated)",
+        "description": "The Stream Control Transmission Protocol (SCTP) is a transport layer protocol used to \nsupport message oriented communication, with several streams of messages in one \nconnection. It serves a similar function as TCP and UDP, incorporating features of both. It is \nmessage-oriented like UDP, and ensures reliable in-sequence transport of messages with \ncongestion control like TCP. \nRationale:",
+        "recommendations": "312_Ensure_SCTP_is_disabled_Automated.sh"
+    },
+    {
+        "title": "3.1.3 Ensure DCCP is disabled (Automated)",
+        "description": "The Datagram Congestion Control Protocol (DCCP) is a transport layer protocol that \nsupports streaming media and telephony. DCCP provides a way to gain access to \ncongestion control, without having to do it at the application layer, but does not provide in-\nsequence delivery. \nRationale:",
+        "recommendations": "313_Ensure_DCCP_is_disabled_Automated.sh"
+    },
+    {
+        "title": "3.1.4 Ensure wireless interfaces are disabled (Automated)",
+        "description": "Wireless networking is used when wired networks are unavailable. \nRationale:",
+        "recommendations": "314_Ensure_wireless_interfaces_are_disabled_Automated.sh"
+    },
+    {
+        "title": "3.2.1 Ensure IP forwarding is disabled (Automated)",
+        "description": "The net.ipv4.ip_forward and net.ipv6.conf.all.forwarding flags are used to tell the \nsystem whether it can forward packets or not. \nRationale:",
+        "recommendations": "321_Ensure_IP_forwarding_is_disabled_Automated.sh"
+    },
+    {
+        "title": "3.2.2 Ensure packet redirect sending is disabled (Automated)",
+        "description": "ICMP Redirects are used to send routing information to other hosts. As a host itself does \nnot act as a router (in a host only configuration), there is no need to send redirects. \nRationale:",
+        "recommendations": "322_Ensure_packet_redirect_sending_is_disabled_Automated.sh"
+    },
+    {
+        "title": "3.3.1 Ensure source routed packets are not accepted (Automated)",
+        "description": "In networking, source routing allows a sender to partially or fully specify the route packets \ntake through a network. In contrast, non-source routed packets travel a path determined \nby routers in the network. In some cases, systems may not be routable or reachable from \nsome locations (e.g. private addresses vs. Internet routable), and so source routed packets \nwould need to be used. \n257 | P a g e  \nRationale:",
+        "recommendations": "331_Ensure_source_routed_packets_are_not_accepted_Automated.sh"
+    },
+    {
+        "title": "3.3.2 Ensure ICMP redirects are not accepted (Automated)",
+        "description": "ICMP redirect messages are packets that convey routing information and tell your host \n(acting as a router) to send packets via an alternate path. It is a way of allowing an outside \nrouting device to update your system routing tables. By setting \nnet.ipv4.conf.all.accept_redirects and net.ipv6.conf.all.accept_redirects to 0, \nthe system will not accept any ICMP redirect messages, and therefore, won't allow \noutsiders to update the system's routing tables. \nRationale:",
+        "recommendations": "332_Ensure_ICMP_redirects_are_not_accepted_Automated.sh"
+    },
+    {
+        "title": "3.3.3 Ensure secure ICMP redirects are not accepted (Automated)",
+        "description": "Secure ICMP redirects are the same as ICMP redirects, except they come from gateways \nlisted on the default gateway list. It is assumed that these gateways are known to your \nsystem, and that they are likely to be secure. \nRationale:",
+        "recommendations": "333_Ensure_secure_ICMP_redirects_are_not_accepted_Automated.sh"
+    },
+    {
+        "title": "3.3.4 Ensure suspicious packets are logged (Automated)",
+        "description": "When enabled, this feature logs packets with un-routable source addresses to the kernel \nlog. \nRationale:",
+        "recommendations": "334_Ensure_suspicious_packets_are_logged_Automated.sh"
+    },
+    {
+        "title": "3.3.5 Ensure broadcast ICMP requests are ignored (Automated)",
+        "description": "Setting net.ipv4.icmp_echo_ignore_broadcasts to 1 will cause the system to ignore all \nICMP echo and timestamp requests to broadcast and multicast addresses. \nRationale:",
+        "recommendations": "335_Ensure_broadcast_ICMP_requests_are_ignored_Automated.sh"
+    },
+    {
+        "title": "3.3.6 Ensure bogus ICMP responses are ignored (Automated)",
+        "description": "Setting icmp_ignore_bogus_error_responses to 1 prevents the kernel from logging bogus \nresponses (RFC-1122 non-compliant) from broadcast reframes, keeping file systems from \nfilling up with useless log messages. \nRationale:",
+        "recommendations": "336_Ensure_bogus_ICMP_responses_are_ignored_Automated.sh"
+    },
+    {
+        "title": "3.3.7 Ensure Reverse Path Filtering is enabled (Automated)",
+        "description": "Setting net.ipv4.conf.all.rp_filter and net.ipv4.conf.default.rp_filter to 1 forces \nthe Linux kernel to utilize reverse path filtering on a received packet to determine if the \npacket was valid. Essentially, with reverse path filtering, if the return packet does not go \nout the same interface that the corresponding source packet came from, the packet is \ndropped (and logged if log_martians is set). \nRationale:",
+        "recommendations": "337_Ensure_Reverse_Path_Filtering_is_enabled_Automated.sh"
+    },
+    {
+        "title": "3.3.8 Ensure TCP SYN Cookies is enabled (Automated)",
+        "description": "When tcp_syncookies is set, the kernel will handle TCP SYN packets normally until the \nhalf-open connection queue is full, at which time, the SYN cookie functionality kicks in. SYN \ncookies work by not using the SYN queue at all. Instead, the kernel simply replies to the \nSYN with a SYN|ACK, but will include a specially crafted TCP sequence number that \nencodes the source and destination IP address and port number and the time the packet \nwas sent. A legitimate connection would send the ACK packet of the three way handshake \nwith the specially crafted sequence number. This allows the system to verify that it has \nreceived a valid response to a SYN cookie and allow the connection, even though there is no \ncorresponding SYN in the queue. \nRationale:",
+        "recommendations": "338_Ensure_TCP_SYN_Cookies_is_enabled_Automated.sh"
+    },
+    {
+        "title": "3.3.9 Ensure IPv6 router advertisements are not accepted (Automated)",
+        "description": "This setting disables the system's ability to accept IPv6 router advertisements. \nRationale:",
+        "recommendations": "339_Ensure_IPv6_router_advertisements_are_not_accepted_Automated.sh"
+    },
+    {
+        "title": "3.4.1.1 Ensure firewalld is installed (Automated)",
+        "description": "firewalld is a firewall management tool for Linux operating systems. It provides firewall \nfeatures by acting as a front-end for the Linux kernel's netfilter framework via the iptables \nbackend or provides firewall features by acting as a front-end for the Linux kernel's \nnetfilter framework via the nftables utility. \nfirewalld replaces iptables as the default firewall management tool. Use the firewalld utility \nto configure a firewall for less complex firewalls. The utility is easy to use and covers the \ntypical use cases scenario. FirewallD supports both IPv4 and IPv6 networks and can \nadminister separate firewall zones with varying degrees of trust as defined in zone profiles. \nNote: Starting in v0.6.0, FirewallD added support for acting as a front-end for the Linux \nkernel's netfilter framework via the nftables userspace utility, acting as an alternative to the \nnft command line program. \nRationale:",
+        "recommendations": "3411_Ensure_firewalld_is_installed_Automated.sh"
+    },
+    {
+        "title": "3.4.1.2 Ensure iptables-services not installed with firewalld (Automated)",
+        "description": "The iptables-services package contains the iptables.service and ip6tables.service. \nThese services allow for management of the Host Based Firewall provided by the iptables \npackage. \nRationale:",
+        "recommendations": "3412_Ensure_iptables-services_not_installed_with_firewalld_Automated.sh"
+    },
+    {
+        "title": "3.4.1.3 Ensure nftables either not installed or masked with firewalld",
+        "description": "nftables is a subsystem of the Linux kernel providing filtering and classification of network \npackets/datagrams/frames and is the successor to iptables. \n_Note: Support for using nftables as the back-end for firewalld was added in release v0.6.0. \nIn Fedora 19 Linux derivatives, firewalld utilizes iptables as its back-end by default. \nRationale:",
+        "recommendations": "3413_Ensure_nftables_either_not_installed_or_masked_with_firewalld.sh"
+    },
+    {
+        "title": "3.4.1.4 Ensure firewalld service enabled and running (Automated)",
+        "description": "firewalld.service enables the enforcement of firewall rules configured through \nfirewalld \nRationale:",
+        "recommendations": "3414_Ensure_firewalld_service_enabled_and_running_Automated.sh"
+    },
+    {
+        "title": "3.4.1.5 Ensure firewalld default zone is set (Automated)",
+        "description": "A firewall zone defines the trust level for a connection, interface or source address binding. \nThis is a one to many relation, which means that a connection, interface or source can only \nbe part of one zone, but a zone can be used for many network connections, interfaces and \nsources. \n\uf0b7 The default zone is the zone that is used for everything that is not explicitly \nbound/assigned to another zone. \n\uf0b7 If no zone assigned to a connection, interface or source, only the default zone is \nused. \n\uf0b7 The default zone is not always listed as being used for an interface or source as it \nwill be used for it either way. This depends on the manager of the interfaces. \nConnections handled by NetworkManager are listed as NetworkManager requests to add \nthe zone binding for the interface used by the connection. Also interfaces under control of \nthe network service are listed also because the service requests it. \nNote: \n\uf0b7 A firewalld zone configuration file contains the information for a zone.  \no These are the zone description, services, ports, protocols, icmp-blocks, \nmasquerade, forward-ports and rich language rules in an XML file format.  \no The file name has to be zone_name.xml where length of zone_name is currently \nlimited to 17 chars.  \n\uf0b7 NetworkManager binds interfaces to zones automatically  \nRationale:",
+        "recommendations": "3415_Ensure_firewalld_default_zone_is_set_Automated.sh"
+    },
+    {
+        "title": "3.4.1.6 Ensure network interfaces are assigned to appropriate zone",
+        "description": "firewall zones define the trust level of network connections or interfaces. \nRationale:",
+        "recommendations": "3416_Ensure_network_interfaces_are_assigned_to_appropriate_zone.sh"
+    },
+    {
+        "title": "3.4.1.7 Ensure firewalld drops unnecessary services and ports (Manual)",
+        "description": "Services and ports can be accepted or explicitly rejected or dropped by a zone. \nFor every zone, you can set a default behavior that handles incoming traffic that is not \nfurther specified. Such behavior is defined by setting the target of the zone. There are three \noptions - default, ACCEPT, REJECT, and DROP. \n\uf0b7 ACCEPT - you accept all incoming packets except those disabled by a specific rule. \n\uf0b7 REJECT - you disable all incoming packets except those that you have allowed in \nspecific rules and the source machine is informed about the rejection. \n\uf0b7 DROP - you disable all incoming packets except those that you have allowed in \nspecific rules and no information sent to the source machine. \nRationale:",
+        "recommendations": "3417_Ensure_firewalld_drops_unnecessary_services_and_ports_Manual.sh"
+    },
+    {
+        "title": "3.4.2.1 Ensure nftables is installed (Automated)",
+        "description": "nftables provides a new in-kernel packet classification framework that is based on a \nnetwork-specific Virtual Machine (VM) and a new nft userspace command line tool. \nnftables reuses the existing Netfilter subsystems such as the existing hook infrastructure, \nthe connection tracking system, NAT, userspace queuing and logging subsystem. \nNote: \n\uf0b7 nftables is available in Linux kernel 3.13 and newer.  \n\uf0b7 Only one firewall utility should be installed and configured.  \nRationale:",
+        "recommendations": "3421_Ensure_nftables_is_installed_Automated.sh"
+    },
+    {
+        "title": "3.4.2.2 Ensure firewalld is either not installed or masked with nftables",
+        "description": "firewalld (Dynamic Firewall Manager) provides a dynamically managed firewall with \nsupport for network/firewall \u201czones\u201d to assign a level of trust to a network and its \nassociated connections, interfaces or sources. It has support for IPv4, IPv6, Ethernet \nbridges and also for IPSet firewall settings. There is a separation of the runtime and \npermanent configuration options. \nRationale:",
+        "recommendations": "3422_Ensure_firewalld_is_either_not_installed_or_masked_with_nftables.sh"
+    },
+    {
+        "title": "3.4.2.3 Ensure iptables-services not installed with nftables (Automated)",
+        "description": "The iptables-services package contains the iptables.service and ip6tables.service. \nThese services allow for management of the Host Based Firewall provided by the iptables \npackage. \nRationale:",
+        "recommendations": "3423_Ensure_iptables-services_not_installed_with_nftables_Automated.sh"
+    },
+    {
+        "title": "3.4.2.4 Ensure iptables are flushed with nftables (Manual)",
+        "description": "nftables is a replacement for iptables, ip6tables, ebtables and arptables \nRationale:",
+        "recommendations": "3424_Ensure_iptables_are_flushed_with_nftables_Manual.sh"
+    },
+    {
+        "title": "3.4.2.5 Ensure an nftables table exists (Automated)",
+        "description": "Tables hold chains. Each table only has one address family and only applies to packets of \nthis family. Tables can have one of five families. \nRationale:",
+        "recommendations": "3425_Ensure_an_nftables_table_exists_Automated.sh"
+    },
+    {
+        "title": "3.4.2.6 Ensure nftables base chains exist (Automated)",
+        "description": "Chains are containers for rules. They exist in two kinds, base chains and regular chains. A \nbase chain is an entry point for packets from the networking stack, a regular chain may be \nused as jump target and is used for better rule organization. \nRationale:",
+        "recommendations": "3426_Ensure_nftables_base_chains_exist_Automated.sh"
+    },
+    {
+        "title": "3.4.2.7 Ensure nftables loopback traffic is configured (Automated)",
+        "description": "Configure the loopback interface to accept traffic. Configure all other interfaces to deny \ntraffic to the loopback network \nRationale:",
+        "recommendations": "3427_Ensure_nftables_loopback_traffic_is_configured_Automated.sh"
+    },
+    {
+        "title": "3.4.2.8 Ensure nftables outbound and established connections are",
+        "description": "Configure the firewall rules for new outbound and established connections \nRationale:",
+        "recommendations": "3428_Ensure_nftables_outbound_and_established_connections_are.sh"
+    },
+    {
+        "title": "3.4.2.9 Ensure nftables default deny firewall policy (Automated)",
+        "description": "Base chain policy is the default verdict that will be applied to packets reaching the end of \nthe chain. \nRationale:",
+        "recommendations": "3429_Ensure_nftables_default_deny_firewall_policy_Automated.sh"
+    },
+    {
+        "title": "3.4.2.10 Ensure nftables service is enabled (Automated)",
+        "description": "The nftables service allows for the loading of nftables rulesets during boot, or starting on \nthe nftables service \nRationale:",
+        "recommendations": "34210_Ensure_nftables_service_is_enabled_Automated.sh"
+    },
+    {
+        "title": "3.4.2.11 Ensure nftables rules are permanent (Automated)",
+        "description": "nftables is a subsystem of the Linux kernel providing filtering and classification of network \npackets/datagrams/frames. \nThe nftables service reads the /etc/sysconfig/nftables.conf file for a nftables file or \nfiles to include in the nftables ruleset. \nA nftables ruleset containing the input, forward, and output base chains allow network \ntraffic to be filtered. \nRationale:",
+        "recommendations": "34211_Ensure_nftables_rules_are_permanent_Automated.sh"
+    },
+    {
+        "title": "3.4.3.1.1 Ensure iptables packages are installed (Automated)",
+        "description": "iptables is a utility program that allows a system administrator to configure the tables \nprovided by the Linux kernel firewall, implemented as different Netfilter modules, and the \nchains and rules it stores. Different kernel modules and programs are used for different \nprotocols; iptables applies to IPv4, ip6tables to IPv6, arptables to ARP, and ebtables to \nEthernet frames. \nRationale:",
+        "recommendations": "34311_Ensure_iptables_packages_are_installed_Automated.sh"
+    },
+    {
+        "title": "3.4.3.1.2 Ensure nftables is not installed with iptables (Automated)",
+        "description": "nftables is a subsystem of the Linux kernel providing filtering and classification of network \npackets/datagrams/frames and is the successor to iptables. \nRationale:",
+        "recommendations": "34312_Ensure_nftables_is_not_installed_with_iptables_Automated.sh"
+    },
+    {
+        "title": "3.4.3.1.3 Ensure firewalld is either not installed or masked with iptables",
+        "description": "firewalld (Dynamic Firewall Manager) provides a dynamically managed firewall with \nsupport for network/firewall \u201czones\u201d to assign a level of trust to a network and its \nassociated connections, interfaces or sources. It has support for IPv4, IPv6, Ethernet \nbridges and also for IPSet firewall settings. There is a separation of the runtime and \npermanent configuration options. \nRationale:",
+        "recommendations": "34313_Ensure_firewalld_is_either_not_installed_or_masked_with_iptables.sh"
+    },
+    {
+        "title": "3.4.3.2.1 Ensure iptables loopback traffic is configured (Automated)",
+        "description": "Configure the loopback interface to accept traffic. Configure all other interfaces to deny \ntraffic to the loopback network (127.0.0.0/8). \nRationale:",
+        "recommendations": "34321_Ensure_iptables_loopback_traffic_is_configured_Automated.sh"
+    },
+    {
+        "title": "3.4.3.2.2 Ensure iptables outbound and established connections are",
+        "description": "Configure the firewall rules for new outbound, and established connections. \nRationale:",
+        "recommendations": "34322_Ensure_iptables_outbound_and_established_connections_are.sh"
+    },
+    {
+        "title": "3.4.3.2.3 Ensure iptables rules exist for all open ports (Automated)",
+        "description": "Any ports that have been opened on non-loopback addresses need firewall rules to govern \ntraffic. \nRationale:",
+        "recommendations": "34323_Ensure_iptables_rules_exist_for_all_open_ports_Automated.sh"
+    },
+    {
+        "title": "3.4.3.2.4 Ensure iptables default deny firewall policy (Automated)",
+        "description": "A default deny all policy on connections ensures that any unconfigured network usage will \nbe rejected. \nRationale:",
+        "recommendations": "34324_Ensure_iptables_default_deny_firewall_policy_Automated.sh"
+    },
+    {
+        "title": "3.4.3.2.5 Ensure iptables rules are saved (Automated)",
+        "description": "The iptables-services package includes the /etc/sysconfig/iptables file. The \niptables rules in this file will be loaded by the iptables.service during boot, or when it \nis started or re-loaded. \nRationale:",
+        "recommendations": "34325_Ensure_iptables_rules_are_saved_Automated.sh"
+    },
+    {
+        "title": "3.4.3.2.6 Ensure iptables is enabled and active (Automated)",
+        "description": "iptables.service is a utility for configuring and maintaining iptables. \nRationale:",
+        "recommendations": "34326_Ensure_iptables_is_enabled_and_active_Automated.sh"
+    },
+    {
+        "title": "3.4.3.3.1 Ensure ip6tables loopback traffic is configured (Automated)",
+        "description": "Configure the loopback interface to accept traffic. Configure all other interfaces to deny \ntraffic to the loopback network (::1). \nRationale:",
+        "recommendations": "34331_Ensure_ip6tables_loopback_traffic_is_configured_Automated.sh"
+    },
+    {
+        "title": "3.4.3.3.2 Ensure ip6tables outbound and established connections are",
+        "description": "Configure the firewall rules for new outbound, and established IPv6 connections. \nRationale:",
+        "recommendations": "34332_Ensure_ip6tables_outbound_and_established_connections_are.sh"
+    },
+    {
+        "title": "3.4.3.3.3 Ensure ip6tables firewall rules exist for all open ports",
+        "description": "Any ports that have been opened on non-loopback addresses need firewall rules to govern \ntraffic. \nRationale:",
+        "recommendations": "34333_Ensure_ip6tables_firewall_rules_exist_for_all_open_ports.sh"
+    },
+    {
+        "title": "3.4.3.3.4 Ensure ip6tables default deny firewall policy (Automated)",
+        "description": "A default deny all policy on connections ensures that any unconfigured network usage will \nbe rejected. \nRationale:",
+        "recommendations": "34334_Ensure_ip6tables_default_deny_firewall_policy_Automated.sh"
+    },
+    {
+        "title": "3.4.3.3.5 Ensure ip6tables rules are saved (Automated)",
+        "description": "The iptables-services package includes the /etc/sysconfig/ip6tables file. The \nip6tables rules in this file will be loaded by the ip6tables.service during boot, or when \nit is started or re-loaded. \nRationale:",
+        "recommendations": "34335_Ensure_ip6tables_rules_are_saved_Automated.sh"
+    },
+    {
+        "title": "3.4.3.3.6 Ensure ip6tables is enabled and active (Automated)",
+        "description": "ip6tables.service is a utility for configuring and maintaining ip6tables. \nRationale:",
+        "recommendations": "34336_Ensure_ip6tables_is_enabled_and_active_Automated.sh"
+    },
+    {
+        "title": "4.1.1.1 Ensure auditd is installed (Automated)",
+        "description": "auditd is the userspace component to the Linux Auditing System. It's responsible for \nwriting audit records to the disk \nRationale:",
+        "recommendations": "4111_Ensure_auditd_is_installed_Automated.sh"
+    },
+    {
+        "title": "4.1.1.2 Ensure auditd service is enabled (Automated)",
+        "description": "Turn on the auditd daemon to record system events. \nRationale:",
+        "recommendations": "4112_Ensure_auditd_service_is_enabled_Automated.sh"
+    },
+    {
+        "title": "4.1.1.3 Ensure auditing for processes that start prior to auditd is",
+        "description": "Configure grub2 so that processes that are capable of being audited can be audited even if \nthey start up prior to auditd startup. \nRationale:",
+        "recommendations": "4113_Ensure_auditing_for_processes_that_start_prior_to_auditd_is.sh"
+    },
+    {
+        "title": "4.1.1.4 Ensure audit_backlog_limit is sufficient (Automated)",
+        "description": "The backlog limit has a default setting of 64 \nRationale:",
+        "recommendations": "4114_Ensure_audit_backlog_limit_is_sufficient_Automated.sh"
+    },
+    {
+        "title": "4.1.2.1 Ensure audit log storage size is configured (Automated)",
+        "description": "Configure the maximum size of the audit log file. Once the log reaches the maximum size, it \nwill be rotated and a new log file will be started. \nRationale:",
+        "recommendations": "4121_Ensure_audit_log_storage_size_is_configured_Automated.sh"
+    },
+    {
+        "title": "4.1.2.2 Ensure audit logs are not automatically deleted (Automated)",
+        "description": "The max_log_file_action setting determines how to handle the audit log file reaching the \nmax file size. A value of keep_logs will rotate the logs but never delete old logs. \nRationale:",
+        "recommendations": "4122_Ensure_audit_logs_are_not_automatically_deleted_Automated.sh"
+    },
+    {
+        "title": "4.1.2.3 Ensure system is disabled when audit logs are full (Automated)",
+        "description": "The auditd daemon can be configured to halt the system when the audit logs are full. \nThe admin_space_left_action parameter tells the system what action to take when the \nsystem has detected that it is low on disk space. Valid values are ignore, syslog, suspend, \nsingle, and halt. \n\uf0b7 ignore, the audit daemon does nothing \n\uf0b7 Syslog, the audit daemon will issue a warning to syslog \n\uf0b7 Suspend, the audit daemon will stop writing records to the disk \n\uf0b7 single, the audit daemon will put the computer system in single user mode \n\uf0b7 halt, the audit daemon will shutdown the system \nRationale:",
+        "recommendations": "4123_Ensure_system_is_disabled_when_audit_logs_are_full_Automated.sh"
+    },
+    {
+        "title": "4.1.3.1 Ensure changes to system administration scope (sudoers) is",
+        "description": "Monitor scope changes for system administrators. If the system has been properly \nconfigured to force system administrators to log in as themselves first and then use the \nsudo command to execute privileged commands, it is possible to monitor changes in scope. \nThe file /etc/sudoers, or files in /etc/sudoers.d, will be written to when the file(s) or \nrelated attributes have changed. The audit records will be tagged with the identifier \n\"scope\". \nRationale:",
+        "recommendations": "4131_Ensure_changes_to_system_administration_scope_sudoers_is.sh"
+    },
+    {
+        "title": "4.1.3.2 Ensure actions as another user are always logged (Automated)",
+        "description": "sudo provides users with temporary elevated privileges to perform operations, either as \nthe superuser or another user. \nRationale:",
+        "recommendations": "4132_Ensure_actions_as_another_user_are_always_logged_Automated.sh"
+    },
+    {
+        "title": "4.1.3.3 Ensure events that modify the sudo log file are collected",
+        "description": "Monitor the sudo log file. If the system has been properly configured to disable the use of \nthe su command and force all administrators to have to log in first and then use sudo to \nexecute privileged commands, then all administrator commands will be logged to \n/var/log/sudo.log . Any time a command is executed, an audit event will be triggered as \nthe /var/log/sudo.log file will be opened for write and the executed administration \ncommand will be written to the log. \nRationale:",
+        "recommendations": "4133_Ensure_events_that_modify_the_sudo_log_file_are_collected.sh"
+    },
+    {
+        "title": "4.1.3.4 Ensure events that modify date and time information are",
+        "description": "Capture events where the system date and/or time has been modified. The parameters in \nthis section are set to determine if the; \n\uf0b7 adjtimex - tune kernel clock \n\uf0b7 settimeofday - set time using timeval and timezone structures \n\uf0b7 stime - using seconds since 1/1/1970 \n\uf0b7 clock_settime - allows for the setting of several internal clocks and timers \nsystem calls have been executed. Further, ensure to write an audit record to the configured \naudit log file upon exit, tagging the records with a unique identifier such as \"time-change\". \nRationale:",
+        "recommendations": "4134_Ensure_events_that_modify_date_and_time_information_are.sh"
+    },
+    {
+        "title": "4.1.3.5 Ensure events that modify the system's network environment",
+        "description": "Record changes to network environment files or system calls. The below parameters \nmonitors the following system calls, and write an audit event on system call exit: \n\uf0b7 sethostname - set the systems host name \n\uf0b7 setdomainname - set the systems domain name \nThe files being monitored are: \n\uf0b7 /etc/issue and /etc/issue.net - messages displayed pre-login \n\uf0b7 /etc/hosts - file containing host names and associated IP addresses \n\uf0b7 /etc/sysconfig/network - additional information that is valid to all network \ninterfaces \n\uf0b7 /etc/sysconfig/network-scripts/ - directory containing network interface scripts \nand configurations files \nRationale:",
+        "recommendations": "4135_Ensure_events_that_modify_the_systems_network_environment.sh"
+    },
+    {
+        "title": "4.1.3.6 Ensure use of privileged commands are collected (Automated)",
+        "description": "Monitor privileged programs, those that have the setuid and/or setgid bit set on \nexecution, to determine if unprivileged users are running these commands. \nRationale:",
+        "recommendations": "4136_Ensure_use_of_privileged_commands_are_collected_Automated.sh"
+    },
+    {
+        "title": "4.1.3.7 Ensure unsuccessful file access attempts are collected",
+        "description": "Monitor for unsuccessful attempts to access files. The following parameters are associated \nwith system calls that control files: \n\uf0b7 creation - creat  \n\uf0b7 opening - open , openat  \n\uf0b7 truncation - truncate , ftruncate  \nAn audit log record will only be written if all of the following criteria is met for the user \nwhen trying to access a file: \n\uf0b7 a non-privileged user (auid>=UID_MIN) \n\uf0b7 is not a Daemon event (auid=4294967295/unset/-1) \n\uf0b7 if the system call returned EACCES (permission denied) or EPERM (some other \npermanent error associated with the specific system call) \nRationale:",
+        "recommendations": "4137_Ensure_unsuccessful_file_access_attempts_are_collected.sh"
+    },
+    {
+        "title": "4.1.3.8 Ensure events that modify user/group information are collected",
+        "description": "Record events affecting the modification of user or group information, including that of \npasswords and old passwords if in use. \n\uf0b7 /etc/group - system groups \n\uf0b7 /etc/passwd - system users \n\uf0b7 /etc/gshadow - encrypted password for each group \n\uf0b7 /etc/shadow - system user passwords \n\uf0b7 /etc/security/opasswd - storage of old passwords if the relevant PAM module is in \nuse \nThe parameters in this section will watch the files to see if they have been opened for write \nor have had attribute changes (e.g. permissions) and tag them with the identifier \"identity\" \nin the audit log file. \nRationale:",
+        "recommendations": "4138_Ensure_events_that_modify_usergroup_information_are_collected.sh"
+    },
+    {
+        "title": "4.1.3.9 Ensure discretionary access control permission modification",
+        "description": "Monitor changes to file permissions, attributes, ownership and group. The parameters in \nthis section track changes for system calls that affect file permissions and attributes. The \nfollowing commands and system calls effect the permissions, ownership and various \nattributes of files. \n\uf0b7 chmod  \n\uf0b7 fchmod  \n\uf0b7 fchmodat  \n\uf0b7 chown  \n\uf0b7 fchown  \n\uf0b7 fchownat  \n\uf0b7 lchown  \n\uf0b7 setxattr  \n\uf0b7 lsetxattr  \n\uf0b7 fsetxattr  \n\uf0b7 removexattr  \n\uf0b7 lremovexattr  \n\uf0b7 fremovexattr  \nIn all cases, an audit record will only be written for non-system user ids and will ignore \nDaemon events. All audit records will be tagged with the identifier \"perm_mod.\" \nRationale:",
+        "recommendations": "4139_Ensure_discretionary_access_control_permission_modification.sh"
+    },
+    {
+        "title": "4.1.3.10 Ensure successful file system mounts are collected (Automated)",
+        "description": "Monitor the use of the mount system call. The mount (and umount ) system call controls the \nmounting and unmounting of file systems. The parameters below configure the system to \ncreate an audit record when the mount system call is used by a non-privileged user \nRationale:",
+        "recommendations": "41310_Ensure_successful_file_system_mounts_are_collected_Automated.sh"
+    },
+    {
+        "title": "4.1.3.11 Ensure session initiation information is collected (Automated)",
+        "description": "Monitor session initiation events. The parameters in this section track changes to the files \nassociated with session events. \n\uf0b7 /var/run/utmp - tracks all currently logged in users. \n\uf0b7 /var/log/wtmp - file tracks logins, logouts, shutdown, and reboot events. \n\uf0b7 /var/log/btmp - keeps track of failed login attempts and can be read by entering the \ncommand /usr/bin/last -f /var/log/btmp. \nAll audit records will be tagged with the identifier \"session.\" \nRationale:",
+        "recommendations": "41311_Ensure_session_initiation_information_is_collected_Automated.sh"
+    },
+    {
+        "title": "4.1.3.12 Ensure login and logout events are collected (Automated)",
+        "description": "Monitor login and logout events. The parameters below track changes to files associated \nwith login/logout events. \n\uf0b7 /var/log/lastlog - maintain records of the last time a user successfully logged in. \n\uf0b7 /var/run/faillock - directory maintains records of login failures via the \npam_faillock module. \nRationale:",
+        "recommendations": "41312_Ensure_login_and_logout_events_are_collected_Automated.sh"
+    },
+    {
+        "title": "4.1.3.13 Ensure file deletion events by users are collected (Automated)",
+        "description": "Monitor the use of system calls associated with the deletion or renaming of files and file \nattributes. This configuration statement sets up monitoring for: \n\uf0b7 unlink - remove a file \n\uf0b7 unlinkat - remove a file attribute \n\uf0b7 rename - rename a file \n\uf0b7 renameat rename a file attribute system calls and tags them with the identifier \n\"delete\". \nRationale:",
+        "recommendations": "41313_Ensure_file_deletion_events_by_users_are_collected_Automated.sh"
+    },
+    {
+        "title": "4.1.3.14 Ensure events that modify the system's Mandatory Access",
+        "description": "Monitor SELinux, an implementation of mandatory access controls. The parameters below \nmonitor any write access (potential additional, deletion or modification of files in the \ndirectory) or attribute changes to the /etc/selinux/ and /usr/share/selinux/ \ndirectories. \nNote: If a different Mandatory Access Control method is used, changes to the \ncorresponding directories should be audited. \nRationale:",
+        "recommendations": "41314_Ensure_events_that_modify_the_systems_Mandatory_Access.sh"
+    },
+    {
+        "title": "4.1.3.15 Ensure successful and unsuccessful attempts to use the chcon",
+        "description": "The operating system must generate audit records for successful/unsuccessful uses of the \nchcon command. \nRationale:",
+        "recommendations": "41315_Ensure_successful_and_unsuccessful_attempts_to_use_the_chcon.sh"
+    },
+    {
+        "title": "4.1.3.16 Ensure successful and unsuccessful attempts to use the setfacl",
+        "description": "The operating system must generate audit records for successful/unsuccessful uses of the \nsetfacl command \nRationale:",
+        "recommendations": "41316_Ensure_successful_and_unsuccessful_attempts_to_use_the_setfacl.sh"
+    },
+    {
+        "title": "4.1.3.17 Ensure successful and unsuccessful attempts to use the chacl",
+        "description": "The operating system must generate audit records for successful/unsuccessful uses of the \nchacl command \nRationale:",
+        "recommendations": "41317_Ensure_successful_and_unsuccessful_attempts_to_use_the_chacl.sh"
+    },
+    {
+        "title": "4.1.3.18 Ensure successful and unsuccessful attempts to use the",
+        "description": "The operating system must generate audit records for successful/unsuccessful uses of the \nusermod command. \nRationale:",
+        "recommendations": "41318_Ensure_successful_and_unsuccessful_attempts_to_use_the.sh"
+    },
+    {
+        "title": "4.1.3.19 Ensure kernel module loading unloading and modification is",
+        "description": "Monitor the loading and unloading of kernel modules. All the loading / listing / dependency \nchecking of modules is done by kmod via symbolic links. \nThe following system calls control loading and unloading of modules: \n\uf0b7 init_module - load a module \n\uf0b7 finit_module - load a module (used when the overhead of using cryptographically \nsigned modules to determine the authenticity of a module can be avoided) \n\uf0b7 delete_module - delete a module \n\uf0b7 create_module - create a loadable module entry \n\uf0b7 query_module - query the kernel for various bits pertaining to modules \nAny execution of the loading and unloading module programs and system calls will trigger \nan audit record with an identifier of modules. \nRationale:",
+        "recommendations": "41319_Ensure_kernel_module_loading_unloading_and_modification_is.sh"
+    },
+    {
+        "title": "4.1.3.20 Ensure the audit configuration is immutable (Automated)",
+        "description": "Set system audit so that audit rules cannot be modified with auditctl . Setting the flag \"-e \n2\" forces audit to be put in immutable mode. Audit changes can only be made on system \nreboot. \nNote: This setting will require the system to be rebooted to update the active auditd \nconfiguration settings. \nRationale:",
+        "recommendations": "41320_Ensure_the_audit_configuration_is_immutable_Automated.sh"
+    },
+    {
+        "title": "4.1.3.21 Ensure the running and on disk configuration is the same",
+        "description": "The Audit system have both on disk and running configuration. It is possible for these \nconfiguration settings to differ. \nNote: Due to the limitations of augenrules and auditctl, it is not absolutely guaranteed \nthat loading the rule sets via augenrules --load will result in all rules being loaded or \neven that the user will be informed if there was a problem loading the rules. \nRationale:",
+        "recommendations": "41321_Ensure_the_running_and_on_disk_configuration_is_the_same.sh"
+    },
+    {
+        "title": "4.2.1.1 Ensure rsyslog is installed (Automated)",
+        "description": "The rsyslog software is recommended in environments where journald does not meet \noperation requirements. \nRationale:",
+        "recommendations": "4211_Ensure_rsyslog_is_installed_Automated.sh"
+    },
+    {
+        "title": "4.2.1.2 Ensure rsyslog service is enabled (Automated)",
+        "description": "Once the rsyslog package is installed, ensure that the service is enabled. \nRationale:",
+        "recommendations": "4212_Ensure_rsyslog_service_is_enabled_Automated.sh"
+    },
+    {
+        "title": "4.2.1.3 Ensure journald is configured to send logs to rsyslog (Manual)",
+        "description": "Data from journald may be stored in volatile memory or persisted locally on the server. \nUtilities exist to accept remote export of journald logs, however, use of the RSyslog service \nprovides a consistent means of log collection and export. \nRationale:",
+        "recommendations": "4213_Ensure_journald_is_configured_to_send_logs_to_rsyslog_Manual.sh"
+    },
+    {
+        "title": "4.2.1.4 Ensure rsyslog default file permissions are configured",
+        "description": "RSyslog will create logfiles that do not already exist on the system. This setting controls \nwhat permissions will be applied to these newly created files. \nRationale:",
+        "recommendations": "4214_Ensure_rsyslog_default_file_permissions_are_configured.sh"
+    },
+    {
+        "title": "4.2.1.5 Ensure logging is configured (Manual)",
+        "description": "The /etc/rsyslog.conf and /etc/rsyslog.d/*.conf files specifies rules for logging and \nwhich files are to be used to log certain classes of messages. \nRationale:",
+        "recommendations": "4215_Ensure_logging_is_configured_Manual.sh"
+    },
+    {
+        "title": "4.2.1.6 Ensure rsyslog is configured to send logs to a remote log host",
+        "description": "RSyslog supports the ability to send log events it gathers to a remote log host or to receive \nmessages from remote hosts, thus enabling centralised log management. \nRationale:",
+        "recommendations": "4216_Ensure_rsyslog_is_configured_to_send_logs_to_a_remote_log_host.sh"
+    },
+    {
+        "title": "4.2.1.7 Ensure rsyslog is not configured to recieve logs from a remote",
+        "description": "RSyslog supports the ability to receive messages from remote hosts, thus acting as a log \nserver. Clients should not receive data from other hosts. \nRationale:",
+        "recommendations": "4217_Ensure_rsyslog_is_not_configured_to_recieve_logs_from_a_remote.sh"
+    },
+    {
+        "title": "4.2.2.1.1 Ensure systemd-journal-remote is installed (Manual)",
+        "description": "Journald (via systemd-journal-remote) supports the ability to send log events it gathers to \na remote log host or to receive messages from remote hosts, thus enabling centralised log \nmanagement. \nRationale:",
+        "recommendations": "42211_Ensure_systemd-journal-remote_is_installed_Manual.sh"
+    },
+    {
+        "title": "4.2.2.1.2 Ensure systemd-journal-remote is configured (Manual)",
+        "description": "Journald (via systemd-journal-remote) supports the ability to send log events it gathers to \na remote log host or to receive messages from remote hosts, thus enabling centralised log \nmanagement. \nRationale:",
+        "recommendations": "42212_Ensure_systemd-journal-remote_is_configured_Manual.sh"
+    },
+    {
+        "title": "4.2.2.1.3 Ensure systemd-journal-remote is enabled (Manual)",
+        "description": "Journald (via systemd-journal-remote) supports the ability to send log events it gathers to \na remote log host or to receive messages from remote hosts, thus enabling centralised log \nmanagement. \nRationale:",
+        "recommendations": "42213_Ensure_systemd-journal-remote_is_enabled_Manual.sh"
+    },
+    {
+        "title": "4.2.2.1.4 Ensure journald is not configured to recieve logs from a remote",
+        "description": "Journald supports the ability to receive messages from remote hosts, thus acting as a log \nserver. Clients should not receive data from other hosts. \nNOTE: \n\uf0b7 The same package, systemd-journal-remote, is used for both sending logs to \nremote hosts and receiving incoming logs. \n\uf0b7 With regards to receiving logs, there are two services; systemd-journal-\nremote.socket and systemd-journal-remote.service. \nRationale:",
+        "recommendations": "42214_Ensure_journald_is_not_configured_to_recieve_logs_from_a_remote.sh"
+    },
+    {
+        "title": "4.2.2.2 Ensure journald service is enabled (Automated)",
+        "description": "Ensure that the systemd-journald service is enabled to allow capturing of logging events. \nRationale:",
+        "recommendations": "4222_Ensure_journald_service_is_enabled_Automated.sh"
+    },
+    {
+        "title": "4.2.2.3 Ensure journald is configured to compress large log files",
+        "description": "The journald system includes the capability of compressing overly large files to avoid filling \nup the system with logs or making the logs unmanageably large. \nRationale:",
+        "recommendations": "4223_Ensure_journald_is_configured_to_compress_large_log_files.sh"
+    },
+    {
+        "title": "4.2.2.4 Ensure journald is configured to write logfiles to persistent disk",
+        "description": "Data from journald may be stored in volatile memory or persisted locally on the server. \nLogs in memory will be lost upon a system reboot. By persisting logs to local disk on the \nserver they are protected from loss due to a reboot. \nRationale:",
+        "recommendations": "4224_Ensure_journald_is_configured_to_write_logfiles_to_persistent_disk.sh"
+    },
+    {
+        "title": "4.2.2.5 Ensure journald is not configured to send logs to rsyslog",
+        "description": "Data from journald should be kept in the confines of the service and not forwarded on to \nother services. \nRationale:",
+        "recommendations": "4225_Ensure_journald_is_not_configured_to_send_logs_to_rsyslog.sh"
+    },
+    {
+        "title": "4.2.2.6 Ensure journald log rotation is configured per site policy",
+        "description": "Journald includes the capability of rotating log files regularly to avoid filling up the system \nwith logs or making the logs unmanageably large. The file /etc/systemd/journald.conf is \nthe configuration file used to specify how logs generated by Journald should be rotated. \nRationale:",
+        "recommendations": "4226_Ensure_journald_log_rotation_is_configured_per_site_policy.sh"
+    },
+    {
+        "title": "4.2.2.7 Ensure journald default file permissions configured (Manual)",
+        "description": "Journald will create logfiles that do not already exist on the system. This setting controls \nwhat permissions will be applied to these newly created files. \nRationale:",
+        "recommendations": "4227_Ensure_journald_default_file_permissions_configured_Manual.sh"
+    },
+    {
+        "title": "4.2.3 Ensure permissions on all logfiles are configured (Automated)",
+        "description": "Log files contain information from many services on the the local system, or in the event of \na centralized log server, others systems logs as well. In general log files are found in \n/var/log/, although application can be configured to store logs elsewhere. Should your \napplication store logs in another, ensure to run the same test on that location. \nRationale:",
+        "recommendations": "423_Ensure_permissions_on_all_logfiles_are_configured_Automated.sh"
+    },
+    {
+        "title": "4.3 Ensure logrotate is configured (Manual)",
+        "description": "The system includes the capability of rotating log files regularly to avoid filling up the \nsystem with logs or making the logs unmanageably large. The file \n/etc/logrotate.d/syslog is the configuration file used to rotate log files created by \nsyslog or rsyslog. \nRationale:",
+        "recommendations": "43_Ensure_logrotate_is_configured_Manual.sh"
+    },
+    {
+        "title": "5.1.1 Ensure cron daemon is enabled (Automated)",
+        "description": "The cron daemon is used to execute batch jobs on the system. \nRationale:",
+        "recommendations": "511_Ensure_cron_daemon_is_enabled_Automated.sh"
+    },
+    {
+        "title": "5.1.2 Ensure permissions on /etc/crontab are configured (Automated)",
+        "description": "The /etc/crontab file is used by cron to control its own jobs. The commands in this item \nmake sure that root is the user and group owner of the file and that only the owner can \naccess the file. \nRationale:",
+        "recommendations": "512_Ensure_permissions_on_etccrontab_are_configured_Automated.sh"
+    },
+    {
+        "title": "5.1.3 Ensure permissions on /etc/cron.hourly are configured",
+        "description": "This directory contains system cron jobs that need to run on an hourly basis. The files in \nthis directory cannot be manipulated by the crontab command, but are instead edited by \nsystem administrators using a text editor. The commands below restrict read/write and \nsearch access to user and group root, preventing regular users from accessing this \ndirectory. \nRationale:",
+        "recommendations": "513_Ensure_permissions_on_etccronhourly_are_configured.sh"
+    },
+    {
+        "title": "5.1.4 Ensure permissions on /etc/cron.daily are configured (Automated)",
+        "description": "The /etc/cron.daily directory contains system cron jobs that need to run on a daily basis. \nThe files in this directory cannot be manipulated by the crontab command, but are instead \nedited by system administrators using a text editor. The commands below restrict \nread/write and search access to user and group root, preventing regular users from \naccessing this directory. \nRationale:",
+        "recommendations": "514_Ensure_permissions_on_etccrondaily_are_configured_Automated.sh"
+    },
+    {
+        "title": "5.1.5 Ensure permissions on /etc/cron.weekly are configured",
+        "description": "The /etc/cron.weekly directory contains system cron jobs that need to run on a weekly \nbasis. The files in this directory cannot be manipulated by the crontab command, but are \ninstead edited by system administrators using a text editor. The commands below restrict \nread/write and search access to user and group root, preventing regular users from \naccessing this directory. \nRationale:",
+        "recommendations": "515_Ensure_permissions_on_etccronweekly_are_configured.sh"
+    },
+    {
+        "title": "5.1.6 Ensure permissions on /etc/cron.monthly are configured",
+        "description": "The /etc/cron.monthly directory contains system cron jobs that need to run on a monthly \nbasis. The files in this directory cannot be manipulated by the crontab command, but are \ninstead edited by system administrators using a text editor. The commands below restrict \nread/write and search access to user and group root, preventing regular users from \naccessing this directory. \nRationale:",
+        "recommendations": "516_Ensure_permissions_on_etccronmonthly_are_configured.sh"
+    },
+    {
+        "title": "5.1.7 Ensure permissions on /etc/cron.d are configured (Automated)",
+        "description": "The /etc/cron.d directory contains system cron jobs that need to run in a similar manner \nto the hourly, daily weekly and monthly jobs from /etc/crontab , but require more \ngranular control as to when they run. The files in this directory cannot be manipulated by \nthe crontab command, but are instead edited by system administrators using a text editor. \nThe commands below restrict read/write and search access to user and group root, \npreventing regular users from accessing this directory. \nRationale:",
+        "recommendations": "517_Ensure_permissions_on_etccrond_are_configured_Automated.sh"
+    },
+    {
+        "title": "5.1.8 Ensure cron is restricted to authorized users (Automated)",
+        "description": "If cron is installed in the system, configure /etc/cron.allow to allow specific users to use \nthese services. If /etc/cron.allow does not exist, then /etc/cron.deny is checked. Any \nuser not specifically defined in those files is allowed to use cron. By removing the file, only \nusers in /etc/cron.allow are allowed to use cron. \nNote: Even though a given user is not listed in cron.allow, cron jobs can still be run as that \nuser. The cron.allow file only controls administrative access to the crontab command for \nscheduling and modifying cron jobs. \nRationale:",
+        "recommendations": "518_Ensure_cron_is_restricted_to_authorized_users_Automated.sh"
+    },
+    {
+        "title": "5.1.9 Ensure at is restricted to authorized users (Automated)",
+        "description": "If at is installed in the system, configure /etc/at.allow to allow specific users to use these \nservices. If /etc/at.allow does not exist, then /etc/at.deny is checked. Any user not \nspecifically defined in those files is allowed to use at. By removing the file, only users in \n/etc/at.allow are allowed to use at. \nNote: Even though a given user is not listed in at.allow, at jobs can still be run as that user. \nThe at.allow file only controls administrative access to the at command for scheduling and \nmodifying at jobs. \nRationale:",
+        "recommendations": "519_Ensure_at_is_restricted_to_authorized_users_Automated.sh"
+    },
+    {
+        "title": "5.2.1 Ensure permissions on /etc/ssh/sshd_config are configured",
+        "description": "The /etc/ssh/sshd_config file contains configuration specifications for sshd. The \ncommand below sets the owner and group of the file to root. \nRationale:",
+        "recommendations": "521_Ensure_permissions_on_etcsshsshd_config_are_configured.sh"
+    },
+    {
+        "title": "5.2.2 Ensure permissions on SSH private host key files are configured",
+        "description": "An SSH private key is one of two files used in SSH public key authentication. In this \nauthentication method, the possession of the private key is proof of identity. Only a private \nkey that corresponds to a public key will be able to authenticate successfully. The private \nkeys need to be stored and handled carefully, and no copies of the private key should be \ndistributed. \nRationale:",
+        "recommendations": "522_Ensure_permissions_on_SSH_private_host_key_files_are_configured.sh"
+    },
+    {
+        "title": "5.2.3 Ensure permissions on SSH public host key files are configured",
+        "description": "An SSH public key is one of two files used in SSH public key authentication. In this \nauthentication method, a public key is a key that can be used for verifying digital signatures \ngenerated using a corresponding private key. Only a public key that corresponds to a \nprivate key will be able to authenticate successfully. \nRationale:",
+        "recommendations": "523_Ensure_permissions_on_SSH_public_host_key_files_are_configured.sh"
+    },
+    {
+        "title": "5.2.4 Ensure SSH access is limited (Automated)",
+        "description": "There are several options available to limit which users and group can access the system \nvia SSH. It is recommended that at least one of the following options be leveraged: \n\uf0b7 AllowUsers:  \no The AllowUsers variable gives the system administrator the option of \nallowing specific users to ssh into the system. The list consists of space \nseparated user names. Numeric user IDs are not recognized with this \nvariable. If a system administrator wants to restrict user access further by \nonly allowing the allowed users to log in from a particular host, the entry can \nbe specified in the form of user@host. \n\uf0b7 AllowGroups:  \no The AllowGroups variable gives the system administrator the option of \nallowing specific groups of users to ssh into the system. The list consists of \nspace separated group names. Numeric group IDs are not recognized with \nthis variable. \n\uf0b7 DenyUsers:  \no The DenyUsers variable gives the system administrator the option of denying \nspecific users to ssh into the system. The list consists of space separated user \nnames. Numeric user IDs are not recognized with this variable. If a system \nadministrator wants to restrict user access further by specifically denying a \nuser's access from a particular host, the entry can be specified in the form of \nuser@host. \n\uf0b7 DenyGroups:  \no The DenyGroups variable gives the system administrator the option of \ndenying specific groups of users to ssh into the system. The list consists of \nspace separated group names. Numeric group IDs are not recognized with \nthis variable. \nRationale:",
+        "recommendations": "524_Ensure_SSH_access_is_limited_Automated.sh"
+    },
+    {
+        "title": "5.2.5 Ensure SSH LogLevel is appropriate (Automated)",
+        "description": "INFO level is the basic level that only records login activity of SSH users. In many situations, \nsuch as Incident Response, it is important to determine when a particular user was active \non a system. The logout record can eliminate those users who disconnected, which helps \nnarrow the field. \nVERBOSE level specifies that login and logout activity as well as the key fingerprint for any \nSSH key used for login will be logged. This information is important for SSH key \nmanagement, especially in legacy environments. \nRationale:",
+        "recommendations": "525_Ensure_SSH_LogLevel_is_appropriate_Automated.sh"
+    },
+    {
+        "title": "5.2.6 Ensure SSH PAM is enabled (Automated)",
+        "description": "UsePAM Enables the Pluggable Authentication Module interface. If set to \u201cyes\u201d this will \nenable PAM authentication using ChallengeResponseAuthentication and \nPasswordAuthentication in addition to PAM account and session module processing for all \nauthentication types \nRationale:",
+        "recommendations": "526_Ensure_SSH_PAM_is_enabled_Automated.sh"
+    },
+    {
+        "title": "5.2.7 Ensure SSH root login is disabled (Automated)",
+        "description": "The PermitRootLogin parameter specifies if the root user can log in using ssh. The default \nis no. \nRationale:",
+        "recommendations": "527_Ensure_SSH_root_login_is_disabled_Automated.sh"
+    },
+    {
+        "title": "5.2.8 Ensure SSH HostbasedAuthentication is disabled (Automated)",
+        "description": "The HostbasedAuthentication parameter specifies if authentication is allowed through \ntrusted hosts via the user of .rhosts, or /etc/hosts.equiv, along with successful public \nkey client host authentication. This option only applies to SSH Protocol Version 2. \nRationale:",
+        "recommendations": "528_Ensure_SSH_HostbasedAuthentication_is_disabled_Automated.sh"
+    },
+    {
+        "title": "5.2.9 Ensure SSH PermitEmptyPasswords is disabled (Automated)",
+        "description": "The PermitEmptyPasswords parameter specifies if the SSH server allows login to accounts \nwith empty password strings. \nRationale:",
+        "recommendations": "529_Ensure_SSH_PermitEmptyPasswords_is_disabled_Automated.sh"
+    },
+    {
+        "title": "5.2.10 Ensure SSH PermitUserEnvironment is disabled (Automated)",
+        "description": "The PermitUserEnvironment option allows users to present environment options to the \nssh daemon. \nRationale:",
+        "recommendations": "5210_Ensure_SSH_PermitUserEnvironment_is_disabled_Automated.sh"
+    },
+    {
+        "title": "5.2.11 Ensure SSH IgnoreRhosts is enabled (Automated)",
+        "description": "The IgnoreRhosts parameter specifies that .rhosts and .shosts files will not be used in \nRhostsRSAAuthentication or HostbasedAuthentication. \nRationale:",
+        "recommendations": "5211_Ensure_SSH_IgnoreRhosts_is_enabled_Automated.sh"
+    },
+    {
+        "title": "5.2.12 Ensure SSH X11 forwarding is disabled (Automated)",
+        "description": "The X11Forwarding parameter provides the ability to tunnel X11 traffic through the \nconnection to enable remote graphic connections. \nRationale:",
+        "recommendations": "5212_Ensure_SSH_X11_forwarding_is_disabled_Automated.sh"
+    },
+    {
+        "title": "5.2.13 Ensure SSH AllowTcpForwarding is disabled (Automated)",
+        "description": "SSH port forwarding is a mechanism in SSH for tunneling application ports from the client \nto the server, or servers to clients. It can be used for adding encryption to legacy \napplications, going through firewalls, and some system administrators and IT professionals \nuse it for opening backdoors into the internal network from their home machines \nRationale:",
+        "recommendations": "5213_Ensure_SSH_AllowTcpForwarding_is_disabled_Automated.sh"
+    },
+    {
+        "title": "5.2.14 Ensure system-wide crypto policy is not over-ridden (Automated)",
+        "description": "System-wide Crypto policy can be over-ridden or opted out of for openSSH \nRationale:",
+        "recommendations": "5214_Ensure_system-wide_crypto_policy_is_not_over-ridden_Automated.sh"
+    },
+    {
+        "title": "5.2.15 Ensure SSH warning banner is configured (Automated)",
+        "description": "The Banner parameter specifies a file whose contents must be sent to the remote user \nbefore authentication is permitted. By default, no banner is displayed. \nRationale:",
+        "recommendations": "5215_Ensure_SSH_warning_banner_is_configured_Automated.sh"
+    },
+    {
+        "title": "5.2.16 Ensure SSH MaxAuthTries is set to 4 or less (Automated)",
+        "description": "The MaxAuthTries parameter specifies the maximum number of authentication attempts \npermitted per connection. When the login failure count reaches half the number, error \nmessages will be written to the syslog file detailing the login failure. \nRationale:",
+        "recommendations": "5216_Ensure_SSH_MaxAuthTries_is_set_to_4_or_less_Automated.sh"
+    },
+    {
+        "title": "5.2.17 Ensure SSH MaxStartups is configured (Automated)",
+        "description": "The MaxStartups parameter specifies the maximum number of concurrent unauthenticated \nconnections to the SSH daemon. \nRationale:",
+        "recommendations": "5217_Ensure_SSH_MaxStartups_is_configured_Automated.sh"
+    },
+    {
+        "title": "5.2.18 Ensure SSH MaxSessions is set to 10 or less (Automated)",
+        "description": "The MaxSessions parameter specifies the maximum number of open sessions permitted \nfrom a given connection. \nRationale:",
+        "recommendations": "5218_Ensure_SSH_MaxSessions_is_set_to_10_or_less_Automated.sh"
+    },
+    {
+        "title": "5.2.19 Ensure SSH LoginGraceTime is set to one minute or less",
+        "description": "The LoginGraceTime parameter specifies the time allowed for successful authentication to \nthe SSH server. The longer the Grace period is the more open unauthenticated connections \ncan exist. Like other session controls in this session the Grace Period should be limited to \nappropriate organizational limits to ensure the service is available for needed access. \nRationale:",
+        "recommendations": "5219_Ensure_SSH_LoginGraceTime_is_set_to_one_minute_or_less.sh"
+    },
+    {
+        "title": "5.2.20 Ensure SSH Idle Timeout Interval is configured (Automated)",
+        "description": "The two options ClientAliveInterval and ClientAliveCountMax control the timeout of \nssh sessions. \n\uf0b7 ClientAliveInterval sets a timeout interval in seconds after which if no data has \nbeen received from the client, sshd will send a message through the encrypted \nchannel to request a response from the client. The default is 0, indicating that these \nmessages will not be sent to the client. \n\uf0b7 ClientAliveCountMax sets the number of client alive messages which may be sent \nwithout sshd receiving any messages back from the client. If this threshold is \nreached while client alive messages are being sent, sshd will disconnect the client, \nterminating the session. The default value is 3.  \no The client alive messages are sent through the encrypted channel \no Setting ClientAliveCountMax to 0 disables connection termination \nExample: The default value is 3. If ClientAliveInterval is set to 15, and \nClientAliveCountMax is left at the default, unresponsive SSH clients will be disconnected \nafter approximately 45 seconds \nRationale:",
+        "recommendations": "5220_Ensure_SSH_Idle_Timeout_Interval_is_configured_Automated.sh"
+    },
+    {
+        "title": "5.3.1 Ensure sudo is installed (Automated)",
+        "description": "sudo allows a permitted user to execute a command as the superuser or another user, as \nspecified by the security policy. The invoking user's real (not effective) user ID is used to \ndetermine the user name with which to query the security policy. \nRationale:",
+        "recommendations": "531_Ensure_sudo_is_installed_Automated.sh"
+    },
+    {
+        "title": "5.3.2 Ensure sudo commands use pty (Automated)",
+        "description": "sudo can be configured to run only from a pseudo terminal (pseudo-pty). \nRationale:",
+        "recommendations": "532_Ensure_sudo_commands_use_pty_Automated.sh"
+    },
+    {
+        "title": "5.3.3 Ensure sudo log file exists (Automated)",
+        "description": "sudo can use a custom log file \nRationale:",
+        "recommendations": "533_Ensure_sudo_log_file_exists_Automated.sh"
+    },
+    {
+        "title": "5.3.4 Ensure users must provide password for escalation (Automated)",
+        "description": "The operating system must be configured so that users must provide a password for \nprivilege escalation. \nRationale:",
+        "recommendations": "534_Ensure_users_must_provide_password_for_escalation_Automated.sh"
+    },
+    {
+        "title": "5.3.5 Ensure re-authentication for privilege escalation is not disabled",
+        "description": "The operating system must be configured so that users must re-authenticate for privilege \nescalation. \nRationale:",
+        "recommendations": "535_Ensure_re-authentication_for_privilege_escalation_is_not_disabled.sh"
+    },
+    {
+        "title": "5.3.6 Ensure sudo authentication timeout is configured correctly",
+        "description": "sudo caches used credentials for a default of 5 minutes. This is for ease of use when there \nare multiple administrative tasks to perform. The timeout can be modified to suit local \nsecurity policies. \nRationale:",
+        "recommendations": "536_Ensure_sudo_authentication_timeout_is_configured_correctly.sh"
+    },
+    {
+        "title": "5.3.7 Ensure access to the su command is restricted (Automated)",
+        "description": "The su command allows a user to run a command or shell as another user. The program \nhas been superseded by sudo, which allows for more granular control over privileged \naccess. Normally, the su command can be executed by any user. By uncommenting the \npam_wheel.so statement in /etc/pam.d/su, the su command will only allow users in a \nspecific groups to execute su. This group should be empty to reinforce the use of sudo for \nprivileged access. \nRationale:",
+        "recommendations": "537_Ensure_access_to_the_su_command_is_restricted_Automated.sh"
+    },
+    {
+        "title": "5.4.1 Ensure custom authselect profile is used (Manual)",
+        "description": "A custom profile can be created by copying and customizing one of the default profiles. The \ndefault profiles include: sssd, winbind, or the nis. This profile can then be customized to \nfollow site specific requirements. \nYou can select a profile for the authselect utility for a specific host. The profile will be \napplied to every user logging into the host. \nRationale:",
+        "recommendations": "541_Ensure_custom_authselect_profile_is_used_Manual.sh"
+    },
+    {
+        "title": "5.4.2 Ensure authselect includes with-faillock (Automated)",
+        "description": "The pam_faillock.so module maintains a list of failed authentication attempts per user \nduring a specified interval and locks the account in case there were more than deny \nconsecutive failed authentications. It stores the failure records into per-user files in the \ntally directory \nRationale:",
+        "recommendations": "542_Ensure_authselect_includes_with-faillock_Automated.sh"
+    },
+    {
+        "title": "5.5.1 Ensure password creation requirements are configured",
+        "description": "The pam_pwquality.so module checks the strength of passwords. It performs checks such \nas making sure a password is not a dictionary word, it is a certain length, contains a mix of \ncharacters (e.g. alphabet, numeric, other) and more. The following are definitions of the \npam_pwquality.so options. \n\uf0b7 try_first_pass - retrieve the password from a previous stacked PAM module. If \nnot available, then prompt the user for a password. \n\uf0b7 retry=3 - Allow 3 tries before sending back a failure. \n\uf0b7 minlen=14 - password must be 14 characters or more \n** Either of the following can be used to enforce complex passwords:** \n\uf0b7 minclass=4 - provide at least four classes of characters for the new password \nOR \n\uf0b7 dcredit=-1 - provide at least one digit \n\uf0b7 ucredit=-1 - provide at least one uppercase character \n\uf0b7 ocredit=-1 - provide at least one special character \n\uf0b7 lcredit=-1 - provide at least one lowercase character \nThe settings shown above are one possible policy. Alter these values to conform to your \nown organization's password policies \nRationale:",
+        "recommendations": "551_Ensure_password_creation_requirements_are_configured.sh"
+    },
+    {
+        "title": "5.5.2 Ensure lockout for failed password attempts is configured",
+        "description": "Lock out users after n unsuccessful consecutive login attempts. \n\uf0b7 deny=<n> - Number of attempts before the account is locked \n\uf0b7 unlock_time=<n> - Time in seconds before the account is unlocked \nNote: The maximum configurable value for unlock_time is 604800 \nRationale:",
+        "recommendations": "552_Ensure_lockout_for_failed_password_attempts_is_configured.sh"
+    },
+    {
+        "title": "5.5.3 Ensure password reuse is limited (Automated)",
+        "description": "The /etc/security/opasswd file stores the users' old passwords and can be checked to \nensure that users are not recycling recent passwords. \n\uf0b7 remember=<5> - Number of old passwords to remember \nRationale:",
+        "recommendations": "553_Ensure_password_reuse_is_limited_Automated.sh"
+    },
+    {
+        "title": "5.5.4 Ensure password hashing algorithm is SHA-512 (Automated)",
+        "description": "A cryptographic hash function converts an arbitrary-length input into a fixed length output. \nPassword hashing performs a one-way transformation of a password, turning the \npassword into another string, called the hashed password. \nRationale:",
+        "recommendations": "554_Ensure_password_hashing_algorithm_is_SHA-512_Automated.sh"
+    },
+    {
+        "title": "5.6.1.1 Ensure password expiration is 365 days or less (Automated)",
+        "description": "The PASS_MAX_DAYS parameter in /etc/login.defs allows an administrator to force \npasswords to expire once they reach a defined age. It is recommended that the \nPASS_MAX_DAYS parameter be set to less than or equal to 365 days. \nRationale:",
+        "recommendations": "5611_Ensure_password_expiration_is_365_days_or_less_Automated.sh"
+    },
+    {
+        "title": "5.6.1.2 Ensure minimum days between password changes is 7 or more",
+        "description": "The PASS_MIN_DAYS parameter in /etc/login.defs allows an administrator to prevent \nusers from changing their password until a minimum number of days have passed since the \nlast time the user changed their password. It is recommended that PASS_MIN_DAYS \nparameter be set to 7 or more days. \nRationale:",
+        "recommendations": "5612_Ensure_minimum_days_between_password_changes_is_7_or_more.sh"
+    },
+    {
+        "title": "5.6.1.3 Ensure password expiration warning days is 7 or more",
+        "description": "The PASS_WARN_AGE parameter in /etc/login.defs allows an administrator to notify users \nthat their password will expire in a defined number of days. It is recommended that the \nPASS_WARN_AGE parameter be set to 7 or more days. \nRationale:",
+        "recommendations": "5613_Ensure_password_expiration_warning_days_is_7_or_more.sh"
+    },
+    {
+        "title": "5.6.1.4 Ensure inactive password lock is 30 days or less (Automated)",
+        "description": "User accounts that have been inactive for over a given period of time can be automatically \ndisabled. It is recommended that accounts that are inactive for 30 days after password \nexpiration be disabled. \nRationale:",
+        "recommendations": "5614_Ensure_inactive_password_lock_is_30_days_or_less_Automated.sh"
+    },
+    {
+        "title": "5.6.1.5 Ensure all users last password change date is in the past",
+        "description": "All users should have a password change date in the past. \nRationale:",
+        "recommendations": "5615_Ensure_all_users_last_password_change_date_is_in_the_past.sh"
+    },
+    {
+        "title": "5.6.2 Ensure system accounts are secured (Automated)",
+        "description": "There are a number of accounts provided with most distributions that are used to manage \napplications and are not intended to provide an interactive shell. \nRationale:",
+        "recommendations": "562_Ensure_system_accounts_are_secured_Automated.sh"
+    },
+    {
+        "title": "5.6.3 Ensure default user shell timeout is 900 seconds or less",
+        "description": "TMOUT is an environmental setting that determines the timeout of a shell in seconds. \n\uf0b7 TMOUT=n - Sets the shell timeout to n seconds. A setting of TMOUT=0 disables \ntimeout. \n\uf0b7 readonly TMOUT- Sets the TMOUT environmental variable as readonly, preventing \nunwanted modification during run-time. \n\uf0b7 export TMOUT - exports the TMOUT variable \nSystem Wide Shell Configuration Files: \n\uf0b7 /etc/profile - used to set system wide environmental variables on users shells. \nThe variables are sometimes the same ones that are in the .bash_profile, however \nthis file is used to set an initial PATH or PS1 for all shell users of the system. is only \nexecuted for interactive login shells, or shells executed with the --login \nparameter.  \n\uf0b7 /etc/profile.d - /etc/profile will execute the scripts within \n/etc/profile.d/*.sh. It is recommended to place your configuration in a shell \nscript within /etc/profile.d to set your own system wide environmental variables. \n\uf0b7 /etc/bashrc - System wide version of .bashrc. In Fedora derived distributions, \netc/bashrc also invokes /etc/profile.d/*.sh if non-login shell, but redirects output \nto /dev/null if non-interactive. Is only executed for interactive shells or if \nBASH_ENV is set to /etc/bashrc.  \nRationale:",
+        "recommendations": "563_Ensure_default_user_shell_timeout_is_900_seconds_or_less.sh"
+    },
+    {
+        "title": "5.6.4 Ensure default group for the root account is GID 0 (Automated)",
+        "description": "The usermod command can be used to specify which group the root account belongs to. \nThis affects permissions of files that are created by the root account. \nRationale:",
+        "recommendations": "564_Ensure_default_group_for_the_root_account_is_GID_0_Automated.sh"
+    },
+    {
+        "title": "5.6.5 Ensure default user umask is 027 or more restrictive (Automated)",
+        "description": "The user file-creation mode mask (umask) is use to determine the file permission for newly \ncreated directories and files. In Linux, the default permissions for any newly created \ndirectory is 0777 (rwxrwxrwx), and for any newly created file it is 0666 (rw-rw-rw-). The \numask modifies the default Linux permissions by restricting (masking) these permissions. \nThe umask is not simply subtracted, but is processed bitwise. Bits set in the umask are \ncleared in the resulting file mode. \numask can be set with either octal or Symbolic values: \n\uf0b7 Octal (Numeric) Value - Represented by either three or four digits. ie umask 0027 or \numask 027. If a four digit umask is used, the first digit is ignored. The remaining \nthree digits effect the resulting permissions for user, group, and world/other \nrespectively. \n\uf0b7 Symbolic Value - Represented by a comma separated list for User u, group g, and \nworld/other o. The permissions listed are not masked by umask. ie a umask set by \numask u=rwx,g=rx,o= is the Symbolic equivalent of the Octal umask 027. This \numask would set a newly created directory with file mode drwxr-x--- and a newly \ncreated file with file mode rw-r-----. \nThe default umask can be set to use the pam_umask module or in a System Wide Shell \nConfiguration File. The user creating the directories or files has the discretion of \nchanging the permissions via the chmod command, or choosing a different default umask by \nadding the umask command into a User Shell Configuration File, ( .bash_profile or \n.bashrc), in their home directory. \n656 | P a g e  \nSetting the default umask: \n\uf0b7 pam_umask module:  \no will set the umask according to the system default in /etc/login.defs and \nuser settings, solving the problem of different umask settings with different \nshells, display managers, remote sessions etc. \no umask=<mask> value in the /etc/login.defs file is interpreted as Octal \no Setting USERGROUPS_ENAB to yes in /etc/login.defs (default):  \n\uf0a7 will enable setting of the umask group bits to be the same as owner \nbits. (examples: 022 -> 002, 077 -> 007) for non-root users, if the uid \nis the same as gid, and username is the same as the <primary group \nname>  \n\uf0a7 userdel will remove the user's group if it contains no more members, \nand useradd will create by default a group with the name of the user \n\uf0b7 System Wide Shell Configuration File:  \no /etc/profile - used to set system wide environmental variables on users \nshells. The variables are sometimes the same ones that are in the \n.bash_profile, however this file is used to set an initial PATH or PS1 for all \nshell users of the system. is only executed for interactive login shells, or \nshells executed with the --login parameter.  \no /etc/profile.d - /etc/profile will execute the scripts within \n/etc/profile.d/*.sh. It is recommended to place your configuration in a \nshell script within /etc/profile.d to set your own system wide \nenvironmental variables. \no /etc/bashrc - System wide version of .bashrc. In Fedora derived \ndistributions, etc/bashrc also invokes /etc/profile.d/*.sh if non-login shell, \nbut redirects output to /dev/null if non-interactive. Is only executed for \ninteractive shells or if BASH_ENV is set to /etc/bashrc.  \nUser Shell Configuration Files: \n\uf0b7 ~/.bash_profile - Is executed to configure your shell before the initial command \nprompt. Is only read by login shells.  \n\uf0b7 ~/.bashrc - Is executed for interactive shells. only read by a shell that's both \ninteractive and non-login  \nRationale:",
+        "recommendations": "565_Ensure_default_user_umask_is_027_or_more_restrictive_Automated.sh"
+    },
+    {
+        "title": "6.1.1 Audit system file permissions (Manual)",
+        "description": "The RPM package manager has a number of useful options. One of these, the -V for RPM \noption, can be used to verify that system packages are correctly installed. The -V option can \nbe used to verify a particular package or to verify all system packages. If no output is \nreturned, the package is installed correctly. The following table describes the meaning of \noutput from the verify option: \nCode   Meaning \nS      File size differs. \nM      File mode differs (includes permissions and file type). \n5      The MD5 checksum differs. \nD      The major and minor version numbers differ on a device file. \nL      A mismatch occurs in a link. \nU      The file ownership differs. \nG      The file group owner differs. \nT      The file time (mtime) differs. \nThe rpm -qf command can be used to determine which package a particular file belongs to. \nFor example the following commands determines which package the /bin/bash file \nbelongs to: \n# rpm -qf /bin/bash \nbash-4.1.2-29.el6.x86_64 \n# rpm -S /bin/bash \nbash: /bin/bash \n664 | P a g e  \nTo verify the settings for the package that controls the /bin/bash file, run the following: \n# rpm -V bash-4.1.2-29.el6.x86_64 \n.M.......    /bin/bash \n# rpm --verify bash \n??5?????? c /etc/bash.bashrc \nNote that you can feed the output of the rpm -qf command to the rpm -V command: \n# rpm -V `rpm -qf /etc/passwd`  \n.M...... c /etc/passwd \nS.5....T c /etc/printcap \nRationale:",
+        "recommendations": "611_Audit_system_file_permissions_Manual.sh"
+    },
+    {
+        "title": "6.1.2 Ensure sticky bit is set on all world-writable directories",
+        "description": "Setting the sticky bit on world writable directories prevents users from deleting or \nrenaming files in that directory that are not owned by them. \nRationale:",
+        "recommendations": "612_Ensure_sticky_bit_is_set_on_all_world-writable_directories.sh"
+    },
+    {
+        "title": "6.1.3 Ensure permissions on /etc/passwd are configured (Automated)",
+        "description": "The /etc/passwd file contains user account information that is used by many system \nutilities and therefore must be readable for these utilities to operate. \nRationale:",
+        "recommendations": "613_Ensure_permissions_on_etcpasswd_are_configured_Automated.sh"
+    },
+    {
+        "title": "6.1.4 Ensure permissions on /etc/shadow are configured (Automated)",
+        "description": "The /etc/shadow file is used to store the information about user accounts that is critical to \nthe security of those accounts, such as the hashed password and other security \ninformation. \nRationale:",
+        "recommendations": "614_Ensure_permissions_on_etcshadow_are_configured_Automated.sh"
+    },
+    {
+        "title": "6.1.5 Ensure permissions on /etc/group are configured (Automated)",
+        "description": "The /etc/group file contains a list of all the valid groups defined in the system. The \ncommand below allows read/write access for root and read access for everyone else. \nRationale:",
+        "recommendations": "615_Ensure_permissions_on_etcgroup_are_configured_Automated.sh"
+    },
+    {
+        "title": "6.1.6 Ensure permissions on /etc/gshadow are configured (Automated)",
+        "description": "The /etc/gshadow file is used to store the information about groups that is critical to the \nsecurity of those accounts, such as the hashed password and other security information. \nRationale:",
+        "recommendations": "616_Ensure_permissions_on_etcgshadow_are_configured_Automated.sh"
+    },
+    {
+        "title": "6.1.7 Ensure permissions on /etc/passwd- are configured (Automated)",
+        "description": "The /etc/passwd- file contains backup user account information. \nRationale:",
+        "recommendations": "617_Ensure_permissions_on_etcpasswd-_are_configured_Automated.sh"
+    },
+    {
+        "title": "6.1.8 Ensure permissions on /etc/shadow- are configured (Automated)",
+        "description": "The /etc/shadow- file is used to store backup information about user accounts that is \ncritical to the security of those accounts, such as the hashed password and other security \ninformation. \nRationale:",
+        "recommendations": "618_Ensure_permissions_on_etcshadow-_are_configured_Automated.sh"
+    },
+    {
+        "title": "6.1.9 Ensure permissions on /etc/group- are configured (Automated)",
+        "description": "The /etc/group- file contains a backup list of all the valid groups defined in the system. \nRationale:",
+        "recommendations": "619_Ensure_permissions_on_etcgroup-_are_configured_Automated.sh"
+    },
+    {
+        "title": "6.1.10 Ensure permissions on /etc/gshadow- are configured",
+        "description": "The /etc/gshadow- file is used to store backup information about groups that is critical to \nthe security of those accounts, such as the hashed password and other security \ninformation. \nRationale:",
+        "recommendations": "6110_Ensure_permissions_on_etcgshadow-_are_configured.sh"
+    },
+    {
+        "title": "6.1.11 Ensure no world writable files exist (Automated)",
+        "description": "Unix-based systems support variable settings to control access to files. World writable files \nare the least secure. See the chmod(2) man page for more information. \nRationale:",
+        "recommendations": "6111_Ensure_no_world_writable_files_exist_Automated.sh"
+    },
+    {
+        "title": "6.1.12 Ensure no unowned files or directories exist (Automated)",
+        "description": "Sometimes when administrators delete users from the password file they neglect to \nremove all files owned by those users from the system. \nRationale:",
+        "recommendations": "6112_Ensure_no_unowned_files_or_directories_exist_Automated.sh"
+    },
+    {
+        "title": "6.1.13 Ensure no ungrouped files or directories exist (Automated)",
+        "description": "Sometimes when administrators delete users or groups from the system they neglect to \nremove all files owned by those users or groups. \nRationale:",
+        "recommendations": "6113_Ensure_no_ungrouped_files_or_directories_exist_Automated.sh"
+    },
+    {
+        "title": "6.1.14 Audit SUID executables (Manual)",
+        "description": "The owner of a file can set the file's permissions to run with the owner's or group's \npermissions, even if the user running the program is not the owner or a member of the \ngroup. The most common reason for a SUID program is to enable users to perform \nfunctions (such as changing their password) that require root privileges. \nRationale:",
+        "recommendations": "6114_Audit_SUID_executables_Manual.sh"
+    },
+    {
+        "title": "6.1.15 Audit SGID executables (Manual)",
+        "description": "The owner of a file can set the file's permissions to run with the owner's or group's \npermissions, even if the user running the program is not the owner or a member of the \ngroup. The most common reason for a SGID program is to enable users to perform \nfunctions (such as changing their password) that require root privileges. \nRationale:",
+        "recommendations": "6115_Audit_SGID_executables_Manual.sh"
+    },
+    {
+        "title": "6.2.1 Ensure password fields are not empty (Automated)",
+        "description": "An account with an empty password field means that anybody may log in as that user \nwithout providing a password. \nRationale:",
+        "recommendations": "621_Ensure_password_fields_are_not_empty_Automated.sh"
+    },
+    {
+        "title": "6.2.2 Ensure all groups in /etc/passwd exist in /etc/group (Automated)",
+        "description": "Over time, system administration errors and changes can lead to groups being defined in \n/etc/passwd but not in /etc/group . \nRationale:",
+        "recommendations": "622_Ensure_all_groups_in_etcpasswd_exist_in_etcgroup_Automated.sh"
+    },
+    {
+        "title": "6.2.3 Ensure no duplicate UIDs exist (Automated)",
+        "description": "Although the useradd program will not let you create a duplicate User ID (UID), it is \npossible for an administrator to manually edit the /etc/passwd file and change the UID \nfield. \nRationale:",
+        "recommendations": "623_Ensure_no_duplicate_UIDs_exist_Automated.sh"
+    },
+    {
+        "title": "6.2.4 Ensure no duplicate GIDs exist (Automated)",
+        "description": "Although the groupadd program will not let you create a duplicate Group ID (GID), it is \npossible for an administrator to manually edit the /etc/group file and change the GID field. \nRationale:",
+        "recommendations": "624_Ensure_no_duplicate_GIDs_exist_Automated.sh"
+    },
+    {
+        "title": "6.2.5 Ensure no duplicate user names exist (Automated)",
+        "description": "Although the useradd program will not let you create a duplicate user name, it is possible \nfor an administrator to manually edit the /etc/passwd file and change the user name. \nRationale:",
+        "recommendations": "625_Ensure_no_duplicate_user_names_exist_Automated.sh"
+    },
+    {
+        "title": "6.2.6 Ensure no duplicate group names exist (Automated)",
+        "description": "Although the groupadd program will not let you create a duplicate group name, it is \npossible for an administrator to manually edit the /etc/group file and change the group \nname. \nRationale:",
+        "recommendations": "626_Ensure_no_duplicate_group_names_exist_Automated.sh"
+    },
+    {
+        "title": "6.2.7 Ensure root PATH Integrity (Automated)",
+        "description": "The root user can execute any command on the system and could be fooled into executing \nprograms unintentionally if the PATH is not set correctly. \nRationale:",
+        "recommendations": "627_Ensure_root_PATH_Integrity_Automated.sh"
+    },
+    {
+        "title": "6.2.8 Ensure root is the only UID 0 account (Automated)",
+        "description": "Any account with UID 0 has superuser privileges on the system. \nRationale:",
+        "recommendations": "628_Ensure_root_is_the_only_UID_0_account_Automated.sh"
+    },
+    {
+        "title": "6.2.9 Ensure all users' home directories exist (Automated)",
+        "description": "Users can be defined in /etc/passwd without a home directory or with a home directory \nthat does not actually exist. \nRationale:",
+        "recommendations": "629_Ensure_all_users_home_directories_exist_Automated.sh"
+    },
+    {
+        "title": "6.2.10 Ensure users own their home directories (Automated)",
+        "description": "The user home directory is space defined for the particular user to set local environment \nvariables and to store personal files. \nRationale:",
+        "recommendations": "6210_Ensure_users_own_their_home_directories_Automated.sh"
+    },
+    {
+        "title": "6.2.11 Ensure users' home directories permissions are 750 or more",
+        "description": "While the system administrator can establish secure permissions for users' home \ndirectories, the users can easily override these. \nRationale:",
+        "recommendations": "6211_Ensure_users_home_directories_permissions_are_750_or_more.sh"
+    },
+    {
+        "title": "6.2.12 Ensure users' dot files are not group or world writable",
+        "description": "While the system administrator can establish secure permissions for users' \"dot\" files, the \nusers can easily override these. \nRationale:",
+        "recommendations": "6212_Ensure_users_dot_files_are_not_group_or_world_writable.sh"
+    },
+    {
+        "title": "6.2.13 Ensure users' .netrc Files are not group or world accessible",
+        "description": "While the system administrator can establish secure permissions for users' .netrc files, the \nusers can easily override these. \nRationale:",
+        "recommendations": "6213_Ensure_users_netrc_Files_are_not_group_or_world_accessible.sh"
+    },
+    {
+        "title": "6.2.14 Ensure no users have .forward files (Automated)",
+        "description": "The .forward file specifies an email address to forward the user's mail to. \nRationale:",
+        "recommendations": "6214_Ensure_no_users_have_forward_files_Automated.sh"
+    },
+    {
+        "title": "6.2.15 Ensure no users have .netrc files (Automated)",
+        "description": "The .netrc file contains data for logging into a remote host for file transfers via FTP. \nRationale:",
+        "recommendations": "6215_Ensure_no_users_have_netrc_files_Automated.sh"
+    },
+    {
+        "title": "6.2.16 Ensure no users have .rhosts files (Automated)",
+        "description": "While no .rhosts files are shipped by default, users can easily create them. \nRationale:",
+        "recommendations": "6216_Ensure_no_users_have_rhosts_files_Automated.sh"
+    }
+]

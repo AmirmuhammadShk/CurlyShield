@@ -1,0 +1,1 @@
+sed '/Include/d' /etc/ssh/sshd_config | sed 's/#GSSAPIAuthentication no/GSSAPIAuthentication no/' > /tmp/temp; mv /tmp/temp /etc/ssh/sshd_config

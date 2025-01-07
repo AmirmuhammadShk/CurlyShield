@@ -1,0 +1,2 @@
+find /etc/audit/ -type f \( -name '*.conf' -o -name '*.rules' \) ! -user root | xargs -I {} bash -c "chown root {}".
+Please note that `! -user root` is incorrect syntax, and it should be `-user !root`. Also, using `root -exec chown root {} +` can lead to performance issues as it executes all files found. The rewritten script uses `xargs` command to execute the `chown` command on each file found.

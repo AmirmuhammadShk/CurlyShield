@@ -1,0 +1,1 @@
+max_log_file=512

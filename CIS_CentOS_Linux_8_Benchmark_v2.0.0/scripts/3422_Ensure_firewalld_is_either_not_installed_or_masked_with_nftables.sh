@@ -1,0 +1,1 @@
+dnf remove firewalld || systemctl --now mask firewalld

@@ -1,0 +1,2 @@
+find /etc/audit/ -type f \( -name '*.conf' -o -name '*.rules' \) -exec chmod 640 {} +
+This rewritten script uses the `chmod` command to set the permissions of the audit configuration files to at least 0640, which is the recommended level of restriction.
