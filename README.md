@@ -42,8 +42,8 @@ CurlyShield is perfect for:
 # Usage
 1. Clone the Repository
 
-git clone https://github.com/yourusername/CurlyShield.git
-cd CurlyShield
+    git clone https://github.com/yourusername/CurlyShield.git
+    cd CurlyShield
 
 2. Configure Deployment
 
@@ -54,32 +54,36 @@ cd CurlyShield
 
     Create a Python Virtual Environment:
 
-python -m venv venv
+        python -m venv venv
 
-Activate the Virtual Environment:
+    Activate the Virtual Environment:
 
-    Linux/Mac:
+   Linux/Mac/BSD:
 
-source venv/bin/activate
+        source venv/bin/activate
 
-Windows:
+    Windows:
 
         venv\Scripts\activate.bat
 
 4. Install Dependencies
 
-pip install pandas openpyxl
+        pip install pandas openpyxl
 
 5. Execute CurlyShield
 
-Run the script with the required arguments:
+    Run the script with the required arguments:
+    
+        python CurlyShield.py <directory_name> <goal_server> <user> <path_to_deploy>
 
-python CurlyShield.py <directory_name> <goal_server> <user> <path_to_deploy>
-
-    <directory_name>: Directory containing the CIS Benchmarks and configuration files.
-    <goal_server>: The server you want to harden (e.g., hostname or IP).
-    <user>: User with deployment permissions.
-    <path_to_deploy>: The target path for deploying scripts.
+   directory_name : Directory containing the CIS Benchmarks and configuration files
+   
+   goal_server : The server you want to harden (e.g., hostname or IP)
+   
+   user : User with deployment permissions
+   
+   path_to_deploy : The target path for deploying scripts
+   
 # Why CurlyShield?
 
     Save time by automating tedious manual compliance tasks.
