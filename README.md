@@ -49,8 +49,6 @@ CurlyShield is perfect for:
 # Contributions
 
 We welcome contributions! Feel free to submit issues, suggest features, or fork the repository for your needs.
-#License
 
-CurlyShield is licensed under the GNU Affero General Public License. See the LICENSE file for details.
 
 Secure your systems effortlessly with CurlyShield. ✨
